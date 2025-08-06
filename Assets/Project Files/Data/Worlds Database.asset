@@ -23,3 +23,8 @@ MonoBehaviour:
       path: Assets/Project Files/Game/Scenes/Worlds/World 2 [Alt Demo].unity
       name: 'World 2 [Alt Demo]'
     id: 6fe84aed-5edb-4155-8fd2-99dfb1c08900
+  - scene:
+      scene: {fileID: 102900000, guid: d1290a326782f894d859a7c0b2e490ba, type: 3}
+      path: Assets/Project Files/Game/Scenes/Worlds/World 0.unity
+      name: World 0
+    id: 175a44f3-f538-4aa9-a6cb-8f3998ad41a6
