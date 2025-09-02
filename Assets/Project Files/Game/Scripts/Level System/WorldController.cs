@@ -8,10 +8,12 @@ namespace Watermelon
     {
         private static WorldController worldController;
 
-        [SerializeField] WorldsDatabase database;
+        [SerializeField]
+        WorldsDatabase database;
 
         [Header("Prefabs")]
-        [SerializeField] GameObject playerPrefab;
+        [SerializeField]
+        GameObject playerPrefab;
         private static GameObject PlayerPrefab => worldController.playerPrefab;
 
         private static PlayerBehavior playerBehavior;
@@ -67,11 +69,11 @@ namespace Watermelon
             WorldItemCollector.Unload();
 
             Currency[] currencies = CurrencyController.Currencies;
-            if(!currencies.IsNullOrEmpty())
+            if (!currencies.IsNullOrEmpty())
             {
                 foreach (Currency currency in currencies)
                 {
-                    if(currency != null)
+                    if (currency != null)
                     {
                         currency.Data.DropResPool.ReturnToPoolEverything(true);
                         currency.Data.FlyingResPool.ReturnToPoolEverything(true);
@@ -81,7 +83,9 @@ namespace Watermelon
 
             WorldBehavior.Unload();
 
-            SceneManager.UnloadSceneAsync(CurrentWorld.Scene.Name, UnloadSceneOptions.None).OnCompleted(onWorldUnloaded);
+            SceneManager
+                .UnloadSceneAsync(CurrentWorld.Scene.Name, UnloadSceneOptions.None)
+                .OnCompleted(onWorldUnloaded);
         }
 
         public void LoadCurrentWorld()
@@ -103,7 +107,7 @@ namespace Watermelon
         public void LoadWorld(WorldData worldData)
         {
             CurrentWorld = worldData;
-
+            Debug.Log("CurrentWorld:" + CurrentWorld.ID);
             WorldItemCollector.Initialise();
 
             SceneManager.LoadScene(worldData.Scene.Name, LoadSceneMode.Additive);

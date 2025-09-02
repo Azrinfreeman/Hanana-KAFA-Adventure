@@ -74,7 +74,7 @@ MonoBehaviour:
   bannerType: 1
   interstitialType: 1
   rewardedVideoType: 1
-  loadAdsOnStart: 1
+  loadAdsOnStart: 0
   interstitialFirstStartDelay: 40
   interstitialStartDelay: 40
   interstitialShowingDelay: 30

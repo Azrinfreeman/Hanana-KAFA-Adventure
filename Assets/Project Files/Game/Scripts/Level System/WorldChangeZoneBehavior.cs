@@ -5,10 +5,12 @@ namespace Watermelon
     public class WorldChangeZoneBehavior : MonoBehaviour, IGroundOpenable
     {
         [WorldPicker]
-        [SerializeField] int worldIndex;
+        [SerializeField]
+        int worldIndex;
         public int WorldIndex => worldIndex;
 
-        [SerializeField] WorldChangeSpecialBehavior changeSpecialBehavior;
+        [SerializeField]
+        WorldChangeSpecialBehavior changeSpecialBehavior;
 
         private Vector3 defaultScale;
 
@@ -32,7 +34,7 @@ namespace Watermelon
 
                 gameUI.WorldTransitionPopUp.Show(() =>
                 {
-                    if(changeSpecialBehavior != null)
+                    if (changeSpecialBehavior != null)
                     {
                         changeSpecialBehavior.OnWorldChanged(() =>
                         {
@@ -51,7 +53,7 @@ namespace Watermelon
 
         private void LoadNextWorld()
         {
-            if(worldData != null)
+            if (worldData != null)
             {
                 OnWorldChangeZoneEntered?.Invoke();
 
@@ -95,7 +97,10 @@ namespace Watermelon
             }
             else
             {
-                transform.DOScale(0, 0.3f).SetEasing(Ease.Type.SineOut).OnComplete(() => gameObject.SetActive(false));
+                transform
+                    .DOScale(0, 0.3f)
+                    .SetEasing(Ease.Type.SineOut)
+                    .OnComplete(() => gameObject.SetActive(false));
             }
         }
 

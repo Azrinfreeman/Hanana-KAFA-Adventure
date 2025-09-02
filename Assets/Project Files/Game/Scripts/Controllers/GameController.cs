@@ -8,13 +8,19 @@ namespace Watermelon
     {
         private static GameController instance;
 
-        [SerializeField] GameData gameData;
+        [SerializeField]
+        GameData gameData;
         public static GameData Data => instance.gameData;
 
         [Space]
-        [SerializeField] UIController uiController;
-        [SerializeField] DefaultMusicController defaultMusicController;
-        [SerializeField] CameraController cameraController;
+        [SerializeField]
+        UIController uiController;
+
+        [SerializeField]
+        DefaultMusicController defaultMusicController;
+
+        [SerializeField]
+        CameraController cameraController;
 
         private static WorldController worldController;
         private static GlobalUpgradesController globalUpgradesController;
@@ -99,8 +105,8 @@ namespace Watermelon
 
         private void OnDestroy()
         {
-            Data.Unload(); 
-            
+            Data.Unload();
+
             NavigationHelper.Unload();
 
             DistanceToggle.Unload();
@@ -115,34 +121,43 @@ namespace Watermelon
             Tween.RemoveAll();
         }
 
-        public static void LoadCurrentWorld()
+        public static void LoadLevel1()
         {
-            worldController.LoadCurrentWorld();
+            worldController.LoadWorld("608437bb-6374-4923-8489-096284bf32cc");
+        }
+
+        public static void LoadLevel2()
+        {
+            worldController.LoadWorld("6658372b-e731-4539-a2aa-3bce2e7e0dd2");
         }
 
         public static void OpenMainMenu()
-        {            
+        {
             // Show fullscreen black overlay
-            Overlay.Show(0.3f, () =>
-            {
-                // Save the current state of the game
-                SaveController.Save(true);
-
-                // Show main menu
-                UIController.ShowPage<UIMainMenu>();
-
-                // Unload the current world and all the dependencies
-                GameController.UnloadWorld(() =>
+            Overlay.Show(
+                0.3f,
+                () =>
                 {
-                    DefaultMusicController.ActivateMusic();
+                    // Save the current state of the game
+                    SaveController.Save(true);
 
-                    UIGamepadButton.DisableAllTags();
-                    UIGamepadButton.EnableTag(UIGamepadButtonTag.MainMenu);
+                    // Show main menu
+                    UIController.ShowPage<UIMainMenu>();
 
-                    // Disable fullscreen black overlay
-                    Overlay.Hide(0.3f);
-                });
-            }, true);
+                    // Unload the current world and all the dependencies
+                    GameController.UnloadWorld(() =>
+                    {
+                        DefaultMusicController.ActivateMusic();
+
+                        UIGamepadButton.DisableAllTags();
+                        UIGamepadButton.EnableTag(UIGamepadButtonTag.MainMenu);
+
+                        // Disable fullscreen black overlay
+                        Overlay.Hide(0.3f);
+                    });
+                },
+                true
+            );
         }
 
         public static void OnWorldLoaded(WorldBehavior worldBehavior)
@@ -172,37 +187,49 @@ namespace Watermelon
             worldController.UnloadWorld(onUnloaded);
         }
 
-        public static void LoadWorld(string worldID, SimpleCallback onWorldUnloaded = null, SimpleCallback onNewWorldLoaded = null)
+        public static void LoadWorld(
+            string worldID,
+            SimpleCallback onWorldUnloaded = null,
+            SimpleCallback onNewWorldLoaded = null
+        )
         {
             UIController.HidePage<UIGame>();
 
             // Show fullscreen black overlay
-            Overlay.Show(0.3f, () =>
-            {
-                // Save the current state of the game
-                SaveController.Save(true);
-
-                // Unload the current world and all the dependencies
-                GameController.UnloadWorld(() =>
+            Overlay.Show(
+                0.3f,
+                () =>
                 {
-                    onWorldUnloaded?.Invoke();
+                    // Save the current state of the game
+                    SaveController.Save(true);
 
-                    // Load next world
-                    worldController.LoadWorld(worldID);
-
-                    // Disable fullscreen black overlay
-                    Overlay.Hide(0.3f, () =>
+                    // Unload the current world and all the dependencies
+                    GameController.UnloadWorld(() =>
                     {
-                        UIController.ShowPage<UIGame>();
+                        onWorldUnloaded?.Invoke();
 
-                        onNewWorldLoaded?.Invoke();
+                        // Load next world
+                        worldController.LoadWorld(worldID);
+
+                        // Disable fullscreen black overlay
+                        Overlay.Hide(
+                            0.3f,
+                            () =>
+                            {
+                                UIController.ShowPage<UIGame>();
+
+                                onNewWorldLoaded?.Invoke();
+                            }
+                        );
                     });
-                });
-            }, true);
+                },
+                true
+            );
         }
 
         #region Extensions
-        public bool CacheComponent<T>(out T component) where T : Component
+        public bool CacheComponent<T>(out T component)
+            where T : Component
         {
             Component unboxedComponent = gameObject.GetComponent(typeof(T));
 
@@ -213,7 +240,9 @@ namespace Watermelon
                 return true;
             }
 
-            Debug.LogError(string.Format("Scripts Holder doesn't have {0} script added to it", typeof(T)));
+            Debug.LogError(
+                string.Format("Scripts Holder doesn't have {0} script added to it", typeof(T))
+            );
 
             component = null;
 

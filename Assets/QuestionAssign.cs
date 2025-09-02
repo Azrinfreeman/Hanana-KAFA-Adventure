@@ -10,6 +10,10 @@ namespace Watermelon
         void Start()
         {
             questionController = GameObject.Find("QuestionController").transform;
+            questionController.GetComponent<QuestionController>().level = QuestionClasses
+                .instance
+                .level;
+            questionController.gameObject.SetActive(false);
         }
 
         // Update is called once per frame
@@ -18,6 +22,12 @@ namespace Watermelon
         public void Active()
         {
             questionController.gameObject.SetActive(true);
+        }
+
+        public void GivePlayerQuestion()
+        {
+            Active();
+            questionController.GetComponent<QuestionController>().showQuestion();
         }
     }
 }

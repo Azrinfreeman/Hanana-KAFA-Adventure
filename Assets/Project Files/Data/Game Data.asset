@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdfe15605739d3844adf6c12ca0e15dc, type: 3}
   m_Name: Game Data
   m_EditorClassIdentifier: 
-  useMainMenu: 0
+  useMainMenu: 1
   transactionUIPrefab: {fileID: 0}
   enemiesDatabase: {fileID: 11400000, guid: 8be57db0ee0cc564296dedfbc8d47043, type: 2}
   storageSoundStartTime: 0
