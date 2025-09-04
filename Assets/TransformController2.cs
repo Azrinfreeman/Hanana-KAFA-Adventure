@@ -58,7 +58,7 @@ public class TransformController2 : MonoBehaviour
         children = listClones.Count;
 
         contentHeight.GetComponent<RectTransform>().sizeDelta = new Vector2(
-            1300,
+            1001,
             200 * listClones.Count
         );
     }
@@ -232,9 +232,7 @@ public class TransformController2 : MonoBehaviour
             Destroy(listClones[i].gameObject);
         }
         listClones.Clear();
-        transform
-            .parent.transform.parent.transform.parent.GetComponent<Animator>()
-            .Play("dismissPlayerSelect");
+        transform.parent.transform.parent.transform.parent.GetComponent<Animator>().Play("dismiss");
     }
 
     public void DismissPlayerSelect()
@@ -245,8 +243,6 @@ public class TransformController2 : MonoBehaviour
             Destroy(listClones[i].gameObject);
         }
         listClones.Clear();
-        transform
-            .parent.transform.parent.transform.parent.GetComponent<Animator>()
-            .Play("dismissPlayerSelect");
+        transform.parent.transform.parent.transform.parent.GetComponent<Animator>().Play("dismiss");
     }
 }
