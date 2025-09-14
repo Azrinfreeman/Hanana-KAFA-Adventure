@@ -25650,104 +25650,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 734280423}
   m_SourcePrefab: {fileID: 100100000, guid: b50802db207ba154fb317460a34d17bb, type: 3}
---- !u!1001 &601335658
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1611776140850445510, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_Name
-      value: World Change Zone
-      objectReference: {fileID: 0}
-    - target: {fileID: 1611776140850445510, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -9.97
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -38.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4722086669095081245, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741489112652358063, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741489112652358063, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: offset.y
-      value: 0.39999962
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741489112652358063, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: offset.z
-      value: 2.4099998
-      objectReference: {fileID: 0}
-    - target: {fileID: 4741489112652358063, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: tileBehavior
-      value: 
-      objectReference: {fileID: 754471137}
-    - target: {fileID: 7625431776279054652, guid: fdf7c8fd934439a44bae8cd9498db3e1,
-        type: 3}
-      propertyPath: worldIndex
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fdf7c8fd934439a44bae8cd9498db3e1, type: 3}
 --- !u!1 &602832532 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b50802db207ba154fb317460a34d17bb,
@@ -36915,6 +36817,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -36936,6 +36840,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -42660,6 +42565,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -42681,6 +42588,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -60987,6 +60895,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -61008,6 +60918,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -64957,6 +64868,8 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -64978,6 +64891,7 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -93623,8 +93537,8 @@ MonoBehaviour:
   navMeshSurface: {fileID: 438512383339899028}
   subWorldHandler:
     subworlds:
-    - {fileID: 18863360}
     - {fileID: 1820117116}
+    - {fileID: 18863360}
   diggingSpawnSettings:
     spawnDelay:
       firstValue: 0
@@ -94292,4 +94206,3 @@ SceneRoots:
   - {fileID: 1820117117}
   - {fileID: 413851206}
   - {fileID: 268933961}
-  - {fileID: 601335658}

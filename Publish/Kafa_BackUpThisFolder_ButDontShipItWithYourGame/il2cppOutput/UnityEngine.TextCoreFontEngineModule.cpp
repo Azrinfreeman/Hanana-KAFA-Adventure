@@ -456,6 +456,10 @@ struct GlyphPackingMode_t0DD4406D5D2B01F8045DD6B99C78E7FFDCCE225E
 {
 	int32_t ___value__;
 };
+struct GlyphRasterModes_tD9998B3D209416455235911AE129385AA6BED153 
+{
+	int32_t ___value__;
+};
 struct GlyphRenderMode_tE7FB60827750662A45E89D168932FE2D8AEB5281 
 {
 	int32_t ___value__;
@@ -2965,6 +2969,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Glyph__ctor_m71D55A8FBEA48ECCD78D65CAC9D
 		return;
 	}
 }
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

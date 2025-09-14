@@ -11,11 +11,20 @@ namespace Watermelon
 
         [Space]
         [SerializeField]
+        Button current;
+
+        [SerializeField]
         Button level1;
 
         [Space]
         [SerializeField]
         Button level2;
+
+        [SerializeField]
+        Button level3;
+
+        [SerializeField]
+        Button level4;
 
         [SerializeField]
         Button quitButton;
@@ -30,9 +39,11 @@ namespace Watermelon
         {
             NotchSaveArea.RegisterRectTransform(safeAreaRectTransform);
 
+            current.onClick.AddListener(OnPlayButtonClicked1);
             level1.onClick.AddListener(OnPlayButtonClicked1);
             level2.onClick.AddListener(OnPlayButtonClicked2);
-
+            level3.onClick.AddListener(OnPlayButtonClicked3);
+            level4.onClick.AddListener(OnPlayButtonClicked4);
 #if (UNITY_ANDROID || UNITY_IOS) && !UNITY_EDITOR
             Destroy(quitButton.gameObject);
 #else
@@ -55,6 +66,27 @@ namespace Watermelon
         #endregion
 
         #region Buttons
+
+        public void OnPlayButtonClick0()
+        {
+#if MODULE_HAPTIC
+            Haptic.Play(Haptic.HAPTIC_LIGHT);
+#endif
+
+            AudioController.PlaySound(AudioController.AudioClips.buttonSound);
+
+            Overlay.Show(
+                0.3f,
+                () =>
+                {
+                    UIController.HidePage<UIMainMenu>();
+
+                    GameController.LoadCurrentWorld();
+
+                    Overlay.Hide(0.3f, null);
+                }
+            );
+        }
 
         public void OnPlayButtonClicked1()
         {
@@ -92,6 +124,48 @@ namespace Watermelon
                     UIController.HidePage<UIMainMenu>();
 
                     GameController.LoadLevel2();
+
+                    Overlay.Hide(0.3f, null);
+                }
+            );
+        }
+
+        public void OnPlayButtonClicked3()
+        {
+#if MODULE_HAPTIC
+            Haptic.Play(Haptic.HAPTIC_LIGHT);
+#endif
+
+            AudioController.PlaySound(AudioController.AudioClips.buttonSound);
+
+            Overlay.Show(
+                0.3f,
+                () =>
+                {
+                    UIController.HidePage<UIMainMenu>();
+
+                    GameController.LoadLevel3();
+
+                    Overlay.Hide(0.3f, null);
+                }
+            );
+        }
+
+        public void OnPlayButtonClicked4()
+        {
+#if MODULE_HAPTIC
+            Haptic.Play(Haptic.HAPTIC_LIGHT);
+#endif
+
+            AudioController.PlaySound(AudioController.AudioClips.buttonSound);
+
+            Overlay.Show(
+                0.3f,
+                () =>
+                {
+                    UIController.HidePage<UIMainMenu>();
+
+                    GameController.LoadLevel4();
 
                     Overlay.Hide(0.3f, null);
                 }

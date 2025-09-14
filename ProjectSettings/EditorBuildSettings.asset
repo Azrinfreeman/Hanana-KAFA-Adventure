@@ -36,6 +36,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Project Files/Game/Scenes/Worlds/World 1_1.unity
     guid: 79bf5ef1aca706a4b859d0c1e5295668
+  - enabled: 1
+    path: Assets/Project Files/Game/Scenes/Worlds/World 4.unity
+    guid: bd479fb669ae23f47ac84571416d34ee
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: ce10a941858183b4490f5d437afa5066,
       type: 2}

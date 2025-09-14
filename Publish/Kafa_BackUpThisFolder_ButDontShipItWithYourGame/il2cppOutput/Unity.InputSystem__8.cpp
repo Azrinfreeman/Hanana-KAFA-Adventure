@@ -31448,7 +31448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t InputEventPtr_GetHashCode_m97B532D8E6
 {
 	{
 		InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5* L_0 = __this->___m_EventPtr;
-		return ((int32_t)((int64_t)(uint64_t)(intptr_t)L_0));
+		return ((int32_t)((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_0)));
 	}
 }
 IL2CPP_EXTERN_C  int32_t InputEventPtr_GetHashCode_m97B532D8E6CD524F78323A2F079F1267DB296D1E_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
@@ -34134,7 +34134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputEventTrace_set_m_EventBuffer_m9E277
 {
 	{
 		uint8_t* L_0 = ___0_value;
-		__this->___m_EventBufferStorage = ((int64_t)(uint64_t)(intptr_t)L_0);
+		__this->___m_EventBufferStorage = ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_0));
 		return;
 	}
 }
@@ -34149,7 +34149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputEventTrace_set_m_EventBufferHead_m1
 {
 	{
 		uint8_t* L_0 = ___0_value;
-		__this->___m_EventBufferHeadStorage = ((int64_t)(uint64_t)(intptr_t)L_0);
+		__this->___m_EventBufferHeadStorage = ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_0));
 		return;
 	}
 }
@@ -34164,7 +34164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputEventTrace_set_m_EventBufferTail_mB
 {
 	{
 		uint8_t* L_0 = ___0_value;
-		__this->___m_EventBufferTailStorage = ((int64_t)(uint64_t)(intptr_t)L_0);
+		__this->___m_EventBufferTailStorage = ((int64_t)(uint64_t)((uintptr_t)(intptr_t)L_0));
 		return;
 	}
 }
@@ -35449,20 +35449,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DualSenseGamepadHID_set_play
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_black_mB50217951591A045844C61E7FF31EEE3FEF16737_inline (const RuntimeMethod* method) 
 {
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (0.0f), (0.0f), (0.0f), (1.0f), NULL);
-		V_0 = L_0;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t NumberHelpers_NormalizedFloatToUInt_m83A3FB82B0A6D8684366FE38FF074756D652A6AC_inline (float ___0_value, uint32_t ___1_uintMinValue, uint32_t ___2_uintMaxValue, const RuntimeMethod* method) 

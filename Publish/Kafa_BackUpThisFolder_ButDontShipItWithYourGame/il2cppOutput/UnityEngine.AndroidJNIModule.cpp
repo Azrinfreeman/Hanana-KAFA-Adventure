@@ -60,6 +60,7 @@ struct InterfaceActionInvoker0
 };
 
 struct Action_1_tB44F32ACA513C61A3FB120ABF3B543A334ABB0A0;
+struct Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B;
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 struct AndroidJavaObjectU5BU5D_tBCEB142050F282B940177011644246618E002001;
 struct AndroidJavaProxyU5BU5D_tBFB42844DE08989EA61BC170AFFD4D529C8D7C4E;
@@ -85,6 +86,7 @@ struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
 struct jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F;
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
 struct AndroidConfiguration_t7D5E737292DAE79648D18ED1EC44801762FD2821;
+struct AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010;
 struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
 struct AndroidJavaException_t26383CDFF7DF5904124FA37E4E46B561FC3698BD;
 struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
@@ -571,6 +573,10 @@ struct AndroidColorModeWideColorGamut_t9E9605086E49D99845E6A23906896ADD8812B56C
 struct AndroidHardwareKeyboardHidden_t2CC99DE76308CA902E994D5A793002E232A6DB2F 
 {
 	int32_t ___value__;
+};
+struct AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010  : public RuntimeObject
+{
+	intptr_t ___m_NativeHandle;
 };
 struct AndroidJavaProxy_tE5521F9761F7B95444B9C39FB15FDFC23F80A78D  : public RuntimeObject
 {
@@ -1248,6 +1254,9 @@ struct Type_t  : public MemberInfo_t
 struct Action_1_tB44F32ACA513C61A3FB120ABF3B543A334ABB0A0  : public MulticastDelegate_t
 {
 };
+struct Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B  : public MulticastDelegate_t
+{
+};
 struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87  : public MulticastDelegate_t
 {
 };
@@ -1280,7 +1289,9 @@ struct AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields
 {
 	SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0* ___m_MainThreadSynchronizationContext;
 	AndroidConfiguration_t7D5E737292DAE79648D18ED1EC44801762FD2821* ___m_CurrentConfiguration;
+	AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* ___m_CurrentAndroidInsets;
 	Action_1_tB44F32ACA513C61A3FB120ABF3B543A334ABB0A0* ___onConfigurationChanged;
+	Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* ___onInsetsChanged;
 };
 struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
 {
@@ -2466,6 +2477,10 @@ inline void Action_1_Invoke_m1CAD0F76018CC32968B3EC78613F6F1104B649D4_inline (Ac
 {
 	((  void (*) (Action_1_tB44F32ACA513C61A3FB120ABF3B543A334ABB0A0*, AndroidConfiguration_t7D5E737292DAE79648D18ED1EC44801762FD2821*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
 }
+inline void Action_1_Invoke_mD9672F9B3F8165B8F55FFEBAC84A233E2CD4D27F_inline (Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* __this, AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* ___0_obj, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B*, AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010*, const RuntimeMethod*))Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline)(__this, ___0_obj, method);
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AndroidConfiguration_get_primaryLocaleCountry_m3BF98232E5121A9957EE0771B2FE96D59A07FED9_inline (AndroidConfiguration_t7D5E737292DAE79648D18ED1EC44801762FD2821* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* AndroidConfiguration_get_primaryLocaleLanguage_m6036D7716067E3C52579AEF10AB67FA5E2AF034F_inline (AndroidConfiguration_t7D5E737292DAE79648D18ED1EC44801762FD2821* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidLocale__ctor_m9E07C7046CD091CDB042C5D34B156C71DCAB38B2 (AndroidLocale_tD3DD517AF81D48109C281C82B6ABEBB2A91E5075* __this, String_t* ___0__country, String_t* ___1__language, const RuntimeMethod* method) ;
@@ -3162,7 +3177,7 @@ IL_0047:
 			int32_t L_24 = V_1;
 			NullCheck(L_23);
 			MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_25;
-			L_25 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(96, L_23, L_24);
+			L_25 = VirtualFuncInvoker1< MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265*, int32_t >::Invoke(97, L_23, L_24);
 			V_12 = L_25;
 			V_13 = 0;
 			MethodInfoU5BU5D_tDF3670604A0AECF814A0B0BA09B91FBF0D6A3265* L_26 = V_12;
@@ -8810,7 +8825,7 @@ IL_002a:
 		L_11 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_10, NULL);
 		NullCheck(L_9);
 		bool L_12;
-		L_12 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_9, L_11);
+		L_12 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_9, L_11);
 		V_4 = L_12;
 		bool L_13 = V_4;
 		if (!L_13)
@@ -8832,7 +8847,7 @@ IL_005a:
 		L_16 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_15, NULL);
 		NullCheck(L_14);
 		bool L_17;
-		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_14, L_16);
+		L_17 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_14, L_16);
 		V_5 = L_17;
 		bool L_18 = V_5;
 		if (!L_18)
@@ -8854,7 +8869,7 @@ IL_007b:
 		L_21 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_20, NULL);
 		NullCheck(L_19);
 		bool L_22;
-		L_22 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_19, L_21);
+		L_22 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_19, L_21);
 		V_6 = L_22;
 		bool L_23 = V_6;
 		if (!L_23)
@@ -8878,7 +8893,7 @@ IL_00a8:
 		L_26 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_25, NULL);
 		NullCheck(L_24);
 		bool L_27;
-		L_27 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_24, L_26);
+		L_27 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_24, L_26);
 		V_7 = L_27;
 		bool L_28 = V_7;
 		if (!L_28)
@@ -8900,7 +8915,7 @@ IL_00c9:
 		L_31 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_30, NULL);
 		NullCheck(L_29);
 		bool L_32;
-		L_32 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_29, L_31);
+		L_32 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_29, L_31);
 		V_8 = L_32;
 		bool L_33 = V_8;
 		if (!L_33)
@@ -8922,7 +8937,7 @@ IL_00ea:
 		L_36 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_35, NULL);
 		NullCheck(L_34);
 		bool L_37;
-		L_37 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_34, L_36);
+		L_37 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_34, L_36);
 		V_9 = L_37;
 		bool L_38 = V_9;
 		if (!L_38)
@@ -8944,7 +8959,7 @@ IL_010b:
 		L_41 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_40, NULL);
 		NullCheck(L_39);
 		bool L_42;
-		L_42 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_39, L_41);
+		L_42 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_39, L_41);
 		V_10 = L_42;
 		bool L_43 = V_10;
 		if (!L_43)
@@ -8966,7 +8981,7 @@ IL_012c:
 		L_46 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_45, NULL);
 		NullCheck(L_44);
 		bool L_47;
-		L_47 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_44, L_46);
+		L_47 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_44, L_46);
 		V_11 = L_47;
 		bool L_48 = V_11;
 		if (!L_48)
@@ -8988,7 +9003,7 @@ IL_014d:
 		L_51 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_50, NULL);
 		NullCheck(L_49);
 		bool L_52;
-		L_52 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_49, L_51);
+		L_52 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_49, L_51);
 		V_12 = L_52;
 		bool L_53 = V_12;
 		if (!L_53)
@@ -9015,7 +9030,7 @@ IL_0174:
 		L_56 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_55, NULL);
 		NullCheck(L_54);
 		bool L_57;
-		L_57 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_54, L_56);
+		L_57 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_54, L_56);
 		V_13 = L_57;
 		bool L_58 = V_13;
 		if (!L_58)
@@ -9143,7 +9158,7 @@ IL_021a:
 		L_80 = Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57(L_79, NULL);
 		NullCheck(L_78);
 		bool L_81;
-		L_81 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(119, L_78, L_80);
+		L_81 = VirtualFuncInvoker1< bool, Type_t* >::Invoke(121, L_78, L_80);
 		V_17 = L_81;
 		bool L_82 = V_17;
 		if (!L_82)
@@ -15088,6 +15103,94 @@ IL_0011:
 
 IL_001c:
 	{
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidApplication_SetCurrentInsets_m93580CF140A0556AF7609545CC964EBB006832BF (AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* ___0_insets, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* L_0 = ___0_insets;
+		((AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields*)il2cpp_codegen_static_fields_for(AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var))->___m_CurrentAndroidInsets = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields*)il2cpp_codegen_static_fields_for(AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var))->___m_CurrentAndroidInsets), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* AndroidApplication_GetCurrentInsets_m595D2D663B1CAF97692BB1965A4707691B794088 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* V_0 = NULL;
+	{
+		AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* L_0 = ((AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields*)il2cpp_codegen_static_fields_for(AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var))->___m_CurrentAndroidInsets;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidApplication_DispatchInsetsChanged_m1FF03DCCC81B6E63F94FDA7E4CB9691965DA6FBD (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* G_B2_0 = NULL;
+	Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* G_B1_0 = NULL;
+	{
+		Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* L_0 = ((AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields*)il2cpp_codegen_static_fields_for(AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var))->___onInsetsChanged;
+		Action_1_tB259C54B43B0FC0AA23B9FB777CE2996CB0B4B1B* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		goto IL_0017;
+	}
+
+IL_000c:
+	{
+		AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* L_2 = ((AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_StaticFields*)il2cpp_codegen_static_fields_for(AndroidApplication_t565D1853B1B9F221B2DF9BD3E2CF396A81EA4809_il2cpp_TypeInfo_var))->___m_CurrentAndroidInsets;
+		NullCheck(G_B2_0);
+		Action_1_Invoke_mD9672F9B3F8165B8F55FFEBAC84A233E2CD4D27F_inline(G_B2_0, L_2, NULL);
+	}
+
+IL_0017:
+	{
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidInsets_SetNativeHandle_m1AB29E0C89D8F2C96FCD980FBBA65F8186602346 (AndroidInsets_tA4FA82F159A7CBDFE8F407879914C4B941695010* __this, intptr_t ___0_ptr, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = ___0_ptr;
+		__this->___m_NativeHandle = L_0;
 		return;
 	}
 }

@@ -407,6 +407,416 @@ namespace Watermelon
                             ),
                         },
                     },
+                    new Levels
+                    {
+                        questions = new List<Question>
+                        {
+                            new Question(
+                                "Nabi Muhammad ﷺ dilahirkan di...",
+                                new List<string> { "Madinah", "Taif", "Makkah", "Syam" },
+                                2 // C
+                            ),
+                            new Question(
+                                "Tahun kelahiran Nabi Muhammad ﷺ dikenali sebagai...",
+                                new List<string>
+                                {
+                                    "Tahun Haji",
+                                    "Tahun Hijrah",
+                                    "Tahun Gajah",
+                                    "Tahun Perang Badar",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Ibu Nabi Muhammad ﷺ bernama...",
+                                new List<string>
+                                {
+                                    "Aminah binti Wahab",
+                                    "Siti Khadijah",
+                                    "Halimatus Sa‘adiah",
+                                    "Aisyah binti Abu Bakar",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Bapa Nabi Muhammad ﷺ bernama...",
+                                new List<string>
+                                {
+                                    "Abu Talib",
+                                    "Abdullah bin Abu Bakar",
+                                    "Abdullah bin Abdul Muttalib",
+                                    "Abdul Rahman bin Auf",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Datuk yang memelihara Nabi Muhammad ﷺ selepas kematian ibunya ialah...",
+                                new List<string>
+                                {
+                                    "Abu Talib",
+                                    "Abdul Muttalib",
+                                    "Abbas bin Abdul Muttalib",
+                                    "Hamzah bin Abdul Muttalib",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Nabi Muhammad ﷺ dibesarkan oleh ibu susuan bernama...",
+                                new List<string>
+                                {
+                                    "Siti Khadijah",
+                                    "Halimatus Sa‘adiah",
+                                    "Fatimah binti Muhammad",
+                                    "Zainab binti Jahsy",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Nama gua tempat Nabi Muhammad ﷺ menerima wahyu pertama ialah...",
+                                new List<string>
+                                {
+                                    "Gua Tsur",
+                                    "Gua Hira’",
+                                    "Gua Uhud",
+                                    "Gua Badar",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Wahyu pertama yang diturunkan kepada Nabi Muhammad ﷺ ialah surah...",
+                                new List<string>
+                                {
+                                    "Al-Fatihah",
+                                    "Al-Baqarah",
+                                    "Al-‘Alaq ayat 1-5",
+                                    "Al-Ikhlas",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Isteri pertama Nabi Muhammad ﷺ ialah...",
+                                new List<string>
+                                {
+                                    "Aisyah binti Abu Bakar",
+                                    "Hafsah binti Umar",
+                                    "Khadijah binti Khuwailid",
+                                    "Zainab binti Jahsy",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Peristiwa hijrah Nabi Muhammad ﷺ berlaku dari...",
+                                new List<string>
+                                {
+                                    "Madinah ke Makkah",
+                                    "Taif ke Makkah",
+                                    "Makkah ke Madinah",
+                                    "Syam ke Makkah",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Khalifah pertama selepas kewafatan Nabi Muhammad ﷺ ialah...",
+                                new List<string>
+                                {
+                                    "Umar al-Khattab",
+                                    "Abu Bakar as-Siddiq",
+                                    "Uthman bin Affan",
+                                    "Ali bin Abi Talib",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Peristiwa Isra’ dan Mikraj berlaku pada waktu Nabi...",
+                                new List<string>
+                                {
+                                    "Muda",
+                                    "Selepas menjadi Rasul",
+                                    "Di Madinah",
+                                    "Sebelum berkahwin",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Perang Badar berlaku pada tahun...",
+                                new List<string> { "1 Hijrah", "2 Hijrah", "3 Hijrah", "4 Hijrah" },
+                                1 // B
+                            ),
+                            new Question(
+                                "Perang Uhud berlaku kerana...",
+                                new List<string>
+                                {
+                                    "Perebutan harta",
+                                    "Orang Quraisy ingin membalas dendam Perang Badar",
+                                    "Perbezaan agama dengan Yahudi",
+                                    "Ujian dari Allah",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Perang Khandaq dinamakan begitu kerana...",
+                                new List<string>
+                                {
+                                    "Berlaku di lembah Khandaq",
+                                    "Parit digali untuk mempertahankan Madinah",
+                                    "Berdekatan sungai Khandaq",
+                                    "Menggunakan senjata parit",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Tahun kesedihan bagi Nabi Muhammad ﷺ berlaku kerana...",
+                                new List<string>
+                                {
+                                    "Nabi kehilangan anak lelaki",
+                                    "Kematian isteri dan bapa saudaranya",
+                                    "Kalah dalam Perang Uhud",
+                                    "Larangan masuk ke Makkah",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Perjanjian Hudaibiyah berlaku pada tahun...",
+                                new List<string> { "5 Hijrah", "6 Hijrah", "7 Hijrah", "8 Hijrah" },
+                                1 // B
+                            ),
+                            new Question(
+                                "Perang terakhir yang disertai Nabi Muhammad ﷺ ialah...",
+                                new List<string>
+                                {
+                                    "Perang Badar",
+                                    "Perang Uhud",
+                                    "Perang Khandaq",
+                                    "Perang Tabuk",
+                                },
+                                3 // D
+                            ),
+                            new Question(
+                                "Nama unta yang membawa Nabi Muhammad ﷺ ketika hijrah ialah...",
+                                new List<string> { "Buraq", "Qaswa", "Anbar", "Unta Putih" },
+                                1 // B
+                            ),
+                            new Question(
+                                "Tempat dimakamkan Nabi Muhammad ﷺ ialah...",
+                                new List<string> { "Makkah", "Taif", "Madinah", "Syam" },
+                                2 // C
+                            ),
+                        },
+                    },
+                    new Levels
+                    {
+                        questions = new List<Question>
+                        {
+                            new Question(
+                                "Mengucapkan salam kepada orang lain adalah...",
+                                new List<string> { "Harus", "Sunat", "Sunat muakkad", "Wajib" },
+                                2 // C
+                            ),
+                            new Question(
+                                "Apabila menerima salam, kita hendaklah...",
+                                new List<string>
+                                {
+                                    "Diam sahaja",
+                                    "Menjawab salam",
+                                    "Berlalu pergi",
+                                    "Menggeleng kepala",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab ketika makan ialah...",
+                                new List<string>
+                                {
+                                    "Makan sambil bercakap kotor",
+                                    "Membaca Bismillah sebelum makan",
+                                    "Berebut makanan",
+                                    "Mengotorkan meja",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Apabila bersin, kita disunatkan mengucap...",
+                                new List<string>
+                                {
+                                    "Subhanallah",
+                                    "Alhamdulillah",
+                                    "Astaghfirullah",
+                                    "InsyaAllah",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Apabila mendengar orang bersin mengucap 'Alhamdulillah', kita menjawab...",
+                                new List<string>
+                                {
+                                    "Waalaikumussalam",
+                                    "Yarhamukallah",
+                                    "Barakallah",
+                                    "Syafakallah",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab ketika berjumpa guru ialah...",
+                                new List<string>
+                                {
+                                    "Memalingkan muka",
+                                    "Memberi salam dan senyum",
+                                    "Berjalan laju tanpa menegur",
+                                    "Menunduk tanpa menyapa",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Menutup aurat ketika keluar rumah adalah...",
+                                new List<string> { "Harus", "Makruh", "Wajib", "Sunat" },
+                                2 // C
+                            ),
+                            new Question(
+                                "Adab bercakap dengan ibu bapa ialah...",
+                                new List<string>
+                                {
+                                    "Meninggikan suara",
+                                    "Memotong percakapan mereka",
+                                    "Bercakap dengan sopan",
+                                    "Memalingkan muka",
+                                },
+                                2 // C
+                            ),
+                            new Question(
+                                "Adab ketika menggunakan telefon ialah...",
+                                new List<string>
+                                {
+                                    "Menjerit kuat",
+                                    "Bercakap dengan suara sederhana",
+                                    "Menggunakan ketika solat",
+                                    "Tidak mematikan bunyi di masjid",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab masuk masjid ialah...",
+                                new List<string>
+                                {
+                                    "Mendahulukan kaki kanan",
+                                    "Mendahulukan kaki kiri",
+                                    "Berlari masuk",
+                                    "Menjerit di dalam",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Adab keluar masjid ialah...",
+                                new List<string>
+                                {
+                                    "Mendahulukan kaki kiri",
+                                    "Mendahulukan kaki kanan",
+                                    "Melompat keluar",
+                                    "Menutup mata",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Adab memohon maaf ialah...",
+                                new List<string>
+                                {
+                                    "Menulis surat tanpa nama",
+                                    "Dengan sopan dan rendah hati",
+                                    "Meminta secara kasar",
+                                    "Melalui orang lain sahaja",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Apabila menerima hadiah, kita hendaklah...",
+                                new List<string>
+                                {
+                                    "Menolak dengan sombong",
+                                    "Mengucapkan terima kasih",
+                                    "Menjualnya",
+                                    "Mengkritik hadiah itu",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab di jalan raya ialah...",
+                                new List<string>
+                                {
+                                    "Menghalang laluan orang",
+                                    "Berjalan di tepi kiri jalan",
+                                    "Menjerit pada orang",
+                                    "Duduk di tengah jalan",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab dengan jiran ialah...",
+                                new List<string>
+                                {
+                                    "Menghormati dan membantu mereka",
+                                    "Tidak bertegur sapa",
+                                    "Mengumpat",
+                                    "Mengambil barang tanpa izin",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Apabila menerima jemputan kenduri, kita digalakkan...",
+                                new List<string>
+                                {
+                                    "Menghadirinya jika tiada halangan syarie",
+                                    "Menolaknya tanpa alasan",
+                                    "Menghadiri separuh masa",
+                                    "Menghantar orang lain",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Adab menjaga kebersihan ialah...",
+                                new List<string>
+                                {
+                                    "Membuang sampah di tempat yang disediakan",
+                                    "Membuang sampah di merata tempat",
+                                    "Menyembunyikan sampah",
+                                    "Membakar sampah di dalam rumah",
+                                },
+                                0 // A
+                            ),
+                            new Question(
+                                "Adab bermain ialah...",
+                                new List<string>
+                                {
+                                    "Menjerit kuat",
+                                    "Tidak mengganggu orang lain",
+                                    "Memukul kawan",
+                                    "Merosakkan barang",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab ketika makan bersama-sama ialah...",
+                                new List<string>
+                                {
+                                    "Berebut makanan",
+                                    "Mengambil makanan berhampiran dahulu",
+                                    "Menarik pinggan orang",
+                                    "Mengambil semua lauk",
+                                },
+                                1 // B
+                            ),
+                            new Question(
+                                "Adab tidur ialah...",
+                                new List<string>
+                                {
+                                    "Berwuduk sebelum tidur",
+                                    "Tidur tanpa menutup lampu",
+                                    "Tidur dengan pakaian kotor",
+                                    "Tidur di tempat bising",
+                                },
+                                0 // A
+                            ),
+                        },
+                    },
                 }
             );
         }

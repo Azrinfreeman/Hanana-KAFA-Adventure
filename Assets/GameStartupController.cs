@@ -56,7 +56,8 @@ public class GameStartupController : MonoBehaviour
                 "totalRounds",
                 PlayerPrefs.GetInt("RoundsCollected_" + PlayerPrefs.GetInt("CurrentPlayerNo_"))
             );
-
+            form.AddField("player_device", SystemInfo.deviceName);
+            Debug.Log(SystemInfo.deviceName);
             using (
                 UnityWebRequest www = UnityWebRequest.Post(
                     "https://app-hanana.com/adventuregamekafa/insertmark.php",

@@ -17,17 +17,27 @@ namespace Watermelon
 
         public void AddScore(int score)
         {
-            int tempScore = PlayerPrefs.GetInt("TotalScore");
+            int tempScore = PlayerPrefs.GetInt(
+                "StarsCollected_" + PlayerPrefs.GetInt("CurrentPlayerNo_")
+            );
             totalScore = tempScore;
             totalScore += score;
             Debug.Log(totalScore);
-            PlayerPrefs.SetInt("TotalScore", totalScore);
-
+            //PlayerPrefs.SetInt("Player", totalScore);
+            PlayerPrefs.SetInt(
+                "StarsCollected_" + PlayerPrefs.GetInt("CurrentPlayerNo_"),
+                totalScore
+            );
             textTotalScore.text = totalScore.ToString();
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start() { }
+        void Start()
+        {
+            textTotalScore.text = PlayerPrefs
+                .GetInt("StarsCollected_" + PlayerPrefs.GetInt("CurrentPlayerNo_"))
+                .ToString();
+        }
 
         // Update is called once per frame
         void Update() { }

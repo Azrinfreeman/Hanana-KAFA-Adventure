@@ -57,6 +57,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UIModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UI_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityAnalyticsCommonModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityAnalyticsModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityConsentModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VFXModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_VRModule_CodeGenModule;
@@ -79,7 +80,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_TextMeshPro_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[63] = 
+const Il2CppCodeGenModule* g_CodeGenModules[64] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Core_Inspector_CodeGenModule),
@@ -123,6 +124,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[63] =
 	(&g_UnityEngine_UI_CodeGenModule),
 	(&g_UnityEngine_UnityAnalyticsCommonModule_CodeGenModule),
 	(&g_UnityEngine_UnityAnalyticsModule_CodeGenModule),
+	(&g_UnityEngine_UnityConsentModule_CodeGenModule),
 	(&g_UnityEngine_UnityWebRequestModule_CodeGenModule),
 	(&g_UnityEngine_VFXModule_CodeGenModule),
 	(&g_UnityEngine_VRModule_CodeGenModule),
@@ -150,20 +152,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	29,
 	g_ReversePInvokeWrapperPointers,
-	101278,
+	104464,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	22432,
+	23080,
 	g_Il2CppInvokerPointers,
-	2948,
+	3061,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	842,
+	859,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	63,
+	64,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

@@ -9,6 +9,11 @@ namespace Watermelon
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            Invoke("assigningQuestion", 0.5f);
+        }
+
+        public void assigningQuestion()
+        {
             questionController = GameObject.Find("QuestionController").transform;
             questionController.GetComponent<QuestionController>().level = QuestionClasses
                 .instance

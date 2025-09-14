@@ -725,6 +725,7 @@ struct XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___projection;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___viewport;
 	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___occlusionMesh;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___visibleMesh;
 	int32_t ___textureArraySlice;
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___previousView;
 	bool ___isPreviousViewValid;
@@ -735,6 +736,7 @@ struct XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshaled_pin
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___projection;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___viewport;
 	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___occlusionMesh;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___visibleMesh;
 	int32_t ___textureArraySlice;
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___previousView;
 	int32_t ___isPreviousViewValid;
@@ -745,6 +747,7 @@ struct XRRenderParameter_t0C786C9DBEFFCAD6204039BD181B412B69F95260_marshaled_com
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___projection;
 	Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D ___viewport;
 	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___occlusionMesh;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___visibleMesh;
 	int32_t ___textureArraySlice;
 	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___previousView;
 	int32_t ___isPreviousViewValid;
@@ -1094,6 +1097,8 @@ struct XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8
 	int32_t ___renderPassIndex;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___renderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___renderTargetDesc;
+	int32_t ___renderTargetScaledWidth;
+	int32_t ___renderTargetScaledHeight;
 	bool ___hasMotionVectorPass;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___motionVectorRenderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___motionVectorRenderTargetDesc;
@@ -1108,6 +1113,8 @@ struct XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshaled_pinvoke
 	int32_t ___renderPassIndex;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___renderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___renderTargetDesc;
+	int32_t ___renderTargetScaledWidth;
+	int32_t ___renderTargetScaledHeight;
 	int32_t ___hasMotionVectorPass;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___motionVectorRenderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___motionVectorRenderTargetDesc;
@@ -1122,6 +1129,8 @@ struct XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshaled_com
 	int32_t ___renderPassIndex;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___renderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___renderTargetDesc;
+	int32_t ___renderTargetScaledWidth;
+	int32_t ___renderTargetScaledHeight;
 	int32_t ___hasMotionVectorPass;
 	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___motionVectorRenderTarget;
 	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 ___motionVectorRenderTargetDesc;
@@ -1209,6 +1218,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
 	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
 };
+struct RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B_StaticFields
+{
+	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B ___Invalid;
+};
 struct ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899_StaticFields
 {
 	int32_t ___maximumCullingPlaneCount;
@@ -1285,10 +1298,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_Conve
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRDisplaySubsystem_get_scaleOfAllViewports_Injected_m5DD1F782BB09388DF16E608B75D15DA29B25923F (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_scaleOfAllRenderTargets_Injected_mEA3340ADB771210C251C243F7DFB619A4724ADEE (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_zNear_Injected_mDBB0F36B76C6860C545DCAA7E995735AF2325BFA (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_zFar_Injected_m2D52217CD89724C06B01BF601B9F8B1430B8D717 (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_sRGB_Injected_m5B356B2D8E3ABF9282CF85C68ED1CBD55DF49EA9 (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_textureLayout_Injected_m2A0493011C6CB258956A9C266A9571EF8EC9EB22 (intptr_t ___0__unity_self, int32_t ___1_value, const RuntimeMethod* method) ;
+inline intptr_t MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_inline (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___0_obj, const RuntimeMethod* method)
+{
+	return ((  intptr_t (*) (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27*, const RuntimeMethod*))MarshalledUnityObject_Marshal_TisRuntimeObject_m286B34400A212037E8EBD53DBFEAD7D23CDE8051_gshared_inline)(___0_obj, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81 (intptr_t ___0__unity_self, intptr_t ___1_renderTexture, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A (intptr_t ___0__unity_self, intptr_t ___1_renderTexture, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_SetMSAALevel_Injected_mF42E48EE72287DAAC97BA33501B3D5DFA1C133DB (intptr_t ___0__unity_self, int32_t ___1_level, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_disableLegacyRenderer_Injected_m58AA0D18262F53D34DC5F129728BA4293BA3FB10 (intptr_t ___0__unity_self, bool ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_GetRenderPassCount_Injected_m128B44B7C93B80C978C444D33676E6FFE8D693BF (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
@@ -1309,10 +1329,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDisplaySubsystem_Internal_TryGetCullin
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDisplaySubsystem_Internal_TryGetCullingParams_Injected_m2258C5C619D522732AE762857C52E4481D419506 (intptr_t ___0__unity_self, intptr_t ___1_camera, int32_t ___2_cullingPassIndex, ScriptableCullingParameters_tD9539440A4A7DA4C7578CCE16F24466A5DC89899* ___3_scriptableCullingParameters, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_GetPreferredMirrorBlitMode_Injected_m1FD81CE12DA57010D60B296D96644821BFC7C67B (intptr_t ___0__unity_self, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_SetPreferredMirrorBlitMode_Injected_m58B56F579DB6B5BF72B11E2BE23451D83F01C784 (intptr_t ___0__unity_self, int32_t ___1_blitMode, const RuntimeMethod* method) ;
-inline intptr_t MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_inline (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___0_obj, const RuntimeMethod* method)
-{
-	return ((  intptr_t (*) (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27*, const RuntimeMethod*))MarshalledUnityObject_Marshal_TisRuntimeObject_m286B34400A212037E8EBD53DBFEAD7D23CDE8051_gshared_inline)(___0_obj, method);
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDisplaySubsystem_GetMirrorViewBlitDesc_Injected_mF5F4B088AE849422135E5B4BF57B45DDB6FF25AC (intptr_t ___0__unity_self, intptr_t ___1_mirrorRt, XRMirrorViewBlitDesc_tC913B2856BA2160BC3AD99F0C67293850E2162E0* ___2_outDesc, int32_t ___3_mode, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t BindingsMarshaller_ConvertToNative_mAA01170CFDC728A3BBFDB5E6953B9649292A4D08_inline (CommandBuffer_tB56007DC84EF56296C325EC32DD12AC1E3DC91F7* ___0_commandBuffer, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDisplaySubsystem_AddGraphicsThreadMirrorViewBlit_Injected_m4614F07A9E7F26FE282363BA0768E3CF830F5A2C (intptr_t ___0__unity_self, intptr_t ___1_cmd, bool ___2_allowGraphicsStateInvalidate, int32_t ___3_mode, const RuntimeMethod* method) ;
@@ -2881,6 +2897,35 @@ IL_000f:
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRDisplaySubsystem_get_globalDynamicScale_m139D5FCFF6576D095C56E0DFA799741E1A73BE48 (XRDisplaySubsystem_t4B00B0BF1894A039ACFA8DDC2C2EB9301118C1F1* __this, const RuntimeMethod* method) 
+{
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = BindingsMarshaller_ConvertToNative_m5CBA6690506FEA79B3D37EA631A714862A2F5573_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		float L_2;
+		L_2 = XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E(G_B2_0, NULL);
+		return L_2;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_zNear_mA82157C51F3B61B72570A31574E0149E9743933A (XRDisplaySubsystem_t4B00B0BF1894A039ACFA8DDC2C2EB9301118C1F1* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	intptr_t G_B2_0;
@@ -2995,6 +3040,82 @@ IL_000f:
 		int32_t L_2 = ___0_value;
 		XRDisplaySubsystem_set_textureLayout_Injected_m2A0493011C6CB258956A9C266A9571EF8EC9EB22(G_B2_0, L_2, NULL);
 		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureWidth_mD47A69712DFBCB028883345F73C3115F745AF5D1 (XRDisplaySubsystem_t4B00B0BF1894A039ACFA8DDC2C2EB9301118C1F1* __this, RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___0_renderTexture, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = BindingsMarshaller_ConvertToNative_m5CBA6690506FEA79B3D37EA631A714862A2F5573_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_2 = ___0_renderTexture;
+		intptr_t L_3;
+		L_3 = MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_inline(L_2, MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_RuntimeMethod_var);
+		int32_t L_4;
+		L_4 = XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81(G_B2_0, L_3, NULL);
+		return L_4;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureHeight_mDF0FE20051A202C60B2DD0CD11DC25BCFE82F868 (XRDisplaySubsystem_t4B00B0BF1894A039ACFA8DDC2C2EB9301118C1F1* __this, RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* ___0_renderTexture, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	intptr_t G_B2_0;
+	memset((&G_B2_0), 0, sizeof(G_B2_0));
+	intptr_t G_B1_0;
+	memset((&G_B1_0), 0, sizeof(G_B1_0));
+	{
+		intptr_t L_0;
+		L_0 = BindingsMarshaller_ConvertToNative_m5CBA6690506FEA79B3D37EA631A714862A2F5573_inline(__this, NULL);
+		intptr_t L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000f;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		ThrowHelper_ThrowNullReferenceException_mA9C7629D32240EE0218631933DAC647668CA63CF(__this, NULL);
+		G_B2_0 = G_B1_0;
+	}
+
+IL_000f:
+	{
+		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_2 = ___0_renderTexture;
+		intptr_t L_3;
+		L_3 = MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_inline(L_2, MarshalledUnityObject_Marshal_TisRenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_m0D8D62EDE924858515370268F8F44734A8C38065_RuntimeMethod_var);
+		int32_t L_4;
+		L_4 = XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A(G_B2_0, L_3, NULL);
+		return L_4;
 	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_SetMSAALevel_m5059067DF2E69C356138B8C2DC99131C22F3488C (XRDisplaySubsystem_t4B00B0BF1894A039ACFA8DDC2C2EB9301118C1F1* __this, int32_t ___0_level, const RuntimeMethod* method) 
@@ -3631,6 +3752,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_scaleOfAllRenderT
 	_il2cpp_icall_func = (XRDisplaySubsystem_set_scaleOfAllRenderTargets_Injected_mEA3340ADB771210C251C243F7DFB619A4724ADEE_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem::set_scaleOfAllRenderTargets_Injected(System.IntPtr,System.Single)");
 	_il2cpp_icall_func(___0__unity_self, ___1_value);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E (intptr_t ___0__unity_self, const RuntimeMethod* method) 
+{
+	typedef float (*XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E_ftn) (intptr_t);
+	static XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRDisplaySubsystem_get_globalDynamicScale_Injected_m051382F5EE62B4D835794143A572371D6B9F515E_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem::get_globalDynamicScale_Injected(System.IntPtr)");
+	float icallRetVal = _il2cpp_icall_func(___0__unity_self);
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_zNear_Injected_mDBB0F36B76C6860C545DCAA7E995735AF2325BFA (intptr_t ___0__unity_self, float ___1_value, const RuntimeMethod* method) 
 {
 	typedef void (*XRDisplaySubsystem_set_zNear_Injected_mDBB0F36B76C6860C545DCAA7E995735AF2325BFA_ftn) (intptr_t, float);
@@ -3662,6 +3792,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_set_textureLayout_Inj
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (XRDisplaySubsystem_set_textureLayout_Injected_m2A0493011C6CB258956A9C266A9571EF8EC9EB22_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem::set_textureLayout_Injected(System.IntPtr,UnityEngine.XR.XRDisplaySubsystem/TextureLayout)");
 	_il2cpp_icall_func(___0__unity_self, ___1_value);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81 (intptr_t ___0__unity_self, intptr_t ___1_renderTexture, const RuntimeMethod* method) 
+{
+	typedef int32_t (*XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81_ftn) (intptr_t, intptr_t);
+	static XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRDisplaySubsystem_ScaledTextureWidth_Injected_m42DB8959A4CA66FEE8141CBF156B0F2F93D89D81_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem::ScaledTextureWidth_Injected(System.IntPtr,System.IntPtr)");
+	int32_t icallRetVal = _il2cpp_icall_func(___0__unity_self, ___1_renderTexture);
+	return icallRetVal;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A (intptr_t ___0__unity_self, intptr_t ___1_renderTexture, const RuntimeMethod* method) 
+{
+	typedef int32_t (*XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A_ftn) (intptr_t, intptr_t);
+	static XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRDisplaySubsystem_ScaledTextureHeight_Injected_mE25911F6A7508B09E343E009996359B4632C3B1A_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem::ScaledTextureHeight_Injected(System.IntPtr,System.IntPtr)");
+	int32_t icallRetVal = _il2cpp_icall_func(___0__unity_self, ___1_renderTexture);
+	return icallRetVal;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_SetMSAALevel_Injected_mF42E48EE72287DAAC97BA33501B3D5DFA1C133DB (intptr_t ___0__unity_self, int32_t ___1_level, const RuntimeMethod* method) 
 {
@@ -3843,6 +3991,8 @@ IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_mars
 	marshaled.___renderPassIndex = unmarshaled.___renderPassIndex;
 	marshaled.___renderTarget = unmarshaled.___renderTarget;
 	marshaled.___renderTargetDesc = unmarshaled.___renderTargetDesc;
+	marshaled.___renderTargetScaledWidth = unmarshaled.___renderTargetScaledWidth;
+	marshaled.___renderTargetScaledHeight = unmarshaled.___renderTargetScaledHeight;
 	marshaled.___hasMotionVectorPass = static_cast<int32_t>(unmarshaled.___hasMotionVectorPass);
 	marshaled.___motionVectorRenderTarget = unmarshaled.___motionVectorRenderTarget;
 	marshaled.___motionVectorRenderTargetDesc = unmarshaled.___motionVectorRenderTargetDesc;
@@ -3868,30 +4018,36 @@ IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_mars
 	memset((&unmarshaledrenderTargetDesc_temp_3), 0, sizeof(unmarshaledrenderTargetDesc_temp_3));
 	unmarshaledrenderTargetDesc_temp_3 = marshaled.___renderTargetDesc;
 	unmarshaled.___renderTargetDesc = unmarshaledrenderTargetDesc_temp_3;
-	bool unmarshaledhasMotionVectorPass_temp_4 = false;
-	unmarshaledhasMotionVectorPass_temp_4 = static_cast<bool>(marshaled.___hasMotionVectorPass);
-	unmarshaled.___hasMotionVectorPass = unmarshaledhasMotionVectorPass_temp_4;
-	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B unmarshaledmotionVectorRenderTarget_temp_5;
-	memset((&unmarshaledmotionVectorRenderTarget_temp_5), 0, sizeof(unmarshaledmotionVectorRenderTarget_temp_5));
-	unmarshaledmotionVectorRenderTarget_temp_5 = marshaled.___motionVectorRenderTarget;
-	unmarshaled.___motionVectorRenderTarget = unmarshaledmotionVectorRenderTarget_temp_5;
-	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 unmarshaledmotionVectorRenderTargetDesc_temp_6;
-	memset((&unmarshaledmotionVectorRenderTargetDesc_temp_6), 0, sizeof(unmarshaledmotionVectorRenderTargetDesc_temp_6));
-	unmarshaledmotionVectorRenderTargetDesc_temp_6 = marshaled.___motionVectorRenderTargetDesc;
-	unmarshaled.___motionVectorRenderTargetDesc = unmarshaledmotionVectorRenderTargetDesc_temp_6;
-	bool unmarshaledshouldFillOutDepth_temp_7 = false;
-	unmarshaledshouldFillOutDepth_temp_7 = static_cast<bool>(marshaled.___shouldFillOutDepth);
-	unmarshaled.___shouldFillOutDepth = unmarshaledshouldFillOutDepth_temp_7;
-	bool unmarshaledspaceWarpRightHandedNDC_temp_8 = false;
-	unmarshaledspaceWarpRightHandedNDC_temp_8 = static_cast<bool>(marshaled.___spaceWarpRightHandedNDC);
-	unmarshaled.___spaceWarpRightHandedNDC = unmarshaledspaceWarpRightHandedNDC_temp_8;
-	int32_t unmarshaledcullingPassIndex_temp_9 = 0;
-	unmarshaledcullingPassIndex_temp_9 = marshaled.___cullingPassIndex;
-	unmarshaled.___cullingPassIndex = unmarshaledcullingPassIndex_temp_9;
-	intptr_t unmarshaledfoveatedRenderingInfo_temp_10;
-	memset((&unmarshaledfoveatedRenderingInfo_temp_10), 0, sizeof(unmarshaledfoveatedRenderingInfo_temp_10));
-	unmarshaledfoveatedRenderingInfo_temp_10 = marshaled.___foveatedRenderingInfo;
-	unmarshaled.___foveatedRenderingInfo = unmarshaledfoveatedRenderingInfo_temp_10;
+	int32_t unmarshaledrenderTargetScaledWidth_temp_4 = 0;
+	unmarshaledrenderTargetScaledWidth_temp_4 = marshaled.___renderTargetScaledWidth;
+	unmarshaled.___renderTargetScaledWidth = unmarshaledrenderTargetScaledWidth_temp_4;
+	int32_t unmarshaledrenderTargetScaledHeight_temp_5 = 0;
+	unmarshaledrenderTargetScaledHeight_temp_5 = marshaled.___renderTargetScaledHeight;
+	unmarshaled.___renderTargetScaledHeight = unmarshaledrenderTargetScaledHeight_temp_5;
+	bool unmarshaledhasMotionVectorPass_temp_6 = false;
+	unmarshaledhasMotionVectorPass_temp_6 = static_cast<bool>(marshaled.___hasMotionVectorPass);
+	unmarshaled.___hasMotionVectorPass = unmarshaledhasMotionVectorPass_temp_6;
+	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B unmarshaledmotionVectorRenderTarget_temp_7;
+	memset((&unmarshaledmotionVectorRenderTarget_temp_7), 0, sizeof(unmarshaledmotionVectorRenderTarget_temp_7));
+	unmarshaledmotionVectorRenderTarget_temp_7 = marshaled.___motionVectorRenderTarget;
+	unmarshaled.___motionVectorRenderTarget = unmarshaledmotionVectorRenderTarget_temp_7;
+	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 unmarshaledmotionVectorRenderTargetDesc_temp_8;
+	memset((&unmarshaledmotionVectorRenderTargetDesc_temp_8), 0, sizeof(unmarshaledmotionVectorRenderTargetDesc_temp_8));
+	unmarshaledmotionVectorRenderTargetDesc_temp_8 = marshaled.___motionVectorRenderTargetDesc;
+	unmarshaled.___motionVectorRenderTargetDesc = unmarshaledmotionVectorRenderTargetDesc_temp_8;
+	bool unmarshaledshouldFillOutDepth_temp_9 = false;
+	unmarshaledshouldFillOutDepth_temp_9 = static_cast<bool>(marshaled.___shouldFillOutDepth);
+	unmarshaled.___shouldFillOutDepth = unmarshaledshouldFillOutDepth_temp_9;
+	bool unmarshaledspaceWarpRightHandedNDC_temp_10 = false;
+	unmarshaledspaceWarpRightHandedNDC_temp_10 = static_cast<bool>(marshaled.___spaceWarpRightHandedNDC);
+	unmarshaled.___spaceWarpRightHandedNDC = unmarshaledspaceWarpRightHandedNDC_temp_10;
+	int32_t unmarshaledcullingPassIndex_temp_11 = 0;
+	unmarshaledcullingPassIndex_temp_11 = marshaled.___cullingPassIndex;
+	unmarshaled.___cullingPassIndex = unmarshaledcullingPassIndex_temp_11;
+	intptr_t unmarshaledfoveatedRenderingInfo_temp_12;
+	memset((&unmarshaledfoveatedRenderingInfo_temp_12), 0, sizeof(unmarshaledfoveatedRenderingInfo_temp_12));
+	unmarshaledfoveatedRenderingInfo_temp_12 = marshaled.___foveatedRenderingInfo;
+	unmarshaled.___foveatedRenderingInfo = unmarshaledfoveatedRenderingInfo_temp_12;
 }
 IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_pinvoke_cleanup(XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshaled_pinvoke& marshaled)
 {
@@ -3902,6 +4058,8 @@ IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_mars
 	marshaled.___renderPassIndex = unmarshaled.___renderPassIndex;
 	marshaled.___renderTarget = unmarshaled.___renderTarget;
 	marshaled.___renderTargetDesc = unmarshaled.___renderTargetDesc;
+	marshaled.___renderTargetScaledWidth = unmarshaled.___renderTargetScaledWidth;
+	marshaled.___renderTargetScaledHeight = unmarshaled.___renderTargetScaledHeight;
 	marshaled.___hasMotionVectorPass = static_cast<int32_t>(unmarshaled.___hasMotionVectorPass);
 	marshaled.___motionVectorRenderTarget = unmarshaled.___motionVectorRenderTarget;
 	marshaled.___motionVectorRenderTargetDesc = unmarshaled.___motionVectorRenderTargetDesc;
@@ -3927,30 +4085,36 @@ IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_mars
 	memset((&unmarshaledrenderTargetDesc_temp_3), 0, sizeof(unmarshaledrenderTargetDesc_temp_3));
 	unmarshaledrenderTargetDesc_temp_3 = marshaled.___renderTargetDesc;
 	unmarshaled.___renderTargetDesc = unmarshaledrenderTargetDesc_temp_3;
-	bool unmarshaledhasMotionVectorPass_temp_4 = false;
-	unmarshaledhasMotionVectorPass_temp_4 = static_cast<bool>(marshaled.___hasMotionVectorPass);
-	unmarshaled.___hasMotionVectorPass = unmarshaledhasMotionVectorPass_temp_4;
-	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B unmarshaledmotionVectorRenderTarget_temp_5;
-	memset((&unmarshaledmotionVectorRenderTarget_temp_5), 0, sizeof(unmarshaledmotionVectorRenderTarget_temp_5));
-	unmarshaledmotionVectorRenderTarget_temp_5 = marshaled.___motionVectorRenderTarget;
-	unmarshaled.___motionVectorRenderTarget = unmarshaledmotionVectorRenderTarget_temp_5;
-	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 unmarshaledmotionVectorRenderTargetDesc_temp_6;
-	memset((&unmarshaledmotionVectorRenderTargetDesc_temp_6), 0, sizeof(unmarshaledmotionVectorRenderTargetDesc_temp_6));
-	unmarshaledmotionVectorRenderTargetDesc_temp_6 = marshaled.___motionVectorRenderTargetDesc;
-	unmarshaled.___motionVectorRenderTargetDesc = unmarshaledmotionVectorRenderTargetDesc_temp_6;
-	bool unmarshaledshouldFillOutDepth_temp_7 = false;
-	unmarshaledshouldFillOutDepth_temp_7 = static_cast<bool>(marshaled.___shouldFillOutDepth);
-	unmarshaled.___shouldFillOutDepth = unmarshaledshouldFillOutDepth_temp_7;
-	bool unmarshaledspaceWarpRightHandedNDC_temp_8 = false;
-	unmarshaledspaceWarpRightHandedNDC_temp_8 = static_cast<bool>(marshaled.___spaceWarpRightHandedNDC);
-	unmarshaled.___spaceWarpRightHandedNDC = unmarshaledspaceWarpRightHandedNDC_temp_8;
-	int32_t unmarshaledcullingPassIndex_temp_9 = 0;
-	unmarshaledcullingPassIndex_temp_9 = marshaled.___cullingPassIndex;
-	unmarshaled.___cullingPassIndex = unmarshaledcullingPassIndex_temp_9;
-	intptr_t unmarshaledfoveatedRenderingInfo_temp_10;
-	memset((&unmarshaledfoveatedRenderingInfo_temp_10), 0, sizeof(unmarshaledfoveatedRenderingInfo_temp_10));
-	unmarshaledfoveatedRenderingInfo_temp_10 = marshaled.___foveatedRenderingInfo;
-	unmarshaled.___foveatedRenderingInfo = unmarshaledfoveatedRenderingInfo_temp_10;
+	int32_t unmarshaledrenderTargetScaledWidth_temp_4 = 0;
+	unmarshaledrenderTargetScaledWidth_temp_4 = marshaled.___renderTargetScaledWidth;
+	unmarshaled.___renderTargetScaledWidth = unmarshaledrenderTargetScaledWidth_temp_4;
+	int32_t unmarshaledrenderTargetScaledHeight_temp_5 = 0;
+	unmarshaledrenderTargetScaledHeight_temp_5 = marshaled.___renderTargetScaledHeight;
+	unmarshaled.___renderTargetScaledHeight = unmarshaledrenderTargetScaledHeight_temp_5;
+	bool unmarshaledhasMotionVectorPass_temp_6 = false;
+	unmarshaledhasMotionVectorPass_temp_6 = static_cast<bool>(marshaled.___hasMotionVectorPass);
+	unmarshaled.___hasMotionVectorPass = unmarshaledhasMotionVectorPass_temp_6;
+	RenderTargetIdentifier_tA528663AC6EB3911D8E91AA40F7070FA5455442B unmarshaledmotionVectorRenderTarget_temp_7;
+	memset((&unmarshaledmotionVectorRenderTarget_temp_7), 0, sizeof(unmarshaledmotionVectorRenderTarget_temp_7));
+	unmarshaledmotionVectorRenderTarget_temp_7 = marshaled.___motionVectorRenderTarget;
+	unmarshaled.___motionVectorRenderTarget = unmarshaledmotionVectorRenderTarget_temp_7;
+	RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46 unmarshaledmotionVectorRenderTargetDesc_temp_8;
+	memset((&unmarshaledmotionVectorRenderTargetDesc_temp_8), 0, sizeof(unmarshaledmotionVectorRenderTargetDesc_temp_8));
+	unmarshaledmotionVectorRenderTargetDesc_temp_8 = marshaled.___motionVectorRenderTargetDesc;
+	unmarshaled.___motionVectorRenderTargetDesc = unmarshaledmotionVectorRenderTargetDesc_temp_8;
+	bool unmarshaledshouldFillOutDepth_temp_9 = false;
+	unmarshaledshouldFillOutDepth_temp_9 = static_cast<bool>(marshaled.___shouldFillOutDepth);
+	unmarshaled.___shouldFillOutDepth = unmarshaledshouldFillOutDepth_temp_9;
+	bool unmarshaledspaceWarpRightHandedNDC_temp_10 = false;
+	unmarshaledspaceWarpRightHandedNDC_temp_10 = static_cast<bool>(marshaled.___spaceWarpRightHandedNDC);
+	unmarshaled.___spaceWarpRightHandedNDC = unmarshaledspaceWarpRightHandedNDC_temp_10;
+	int32_t unmarshaledcullingPassIndex_temp_11 = 0;
+	unmarshaledcullingPassIndex_temp_11 = marshaled.___cullingPassIndex;
+	unmarshaled.___cullingPassIndex = unmarshaledcullingPassIndex_temp_11;
+	intptr_t unmarshaledfoveatedRenderingInfo_temp_12;
+	memset((&unmarshaledfoveatedRenderingInfo_temp_12), 0, sizeof(unmarshaledfoveatedRenderingInfo_temp_12));
+	unmarshaledfoveatedRenderingInfo_temp_12 = marshaled.___foveatedRenderingInfo;
+	unmarshaled.___foveatedRenderingInfo = unmarshaledfoveatedRenderingInfo_temp_12;
 }
 IL2CPP_EXTERN_C void XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshal_com_cleanup(XRRenderPass_t9E8711E8C69E3917AA39A0CA8304B604ED2838E8_marshaled_com& marshaled)
 {

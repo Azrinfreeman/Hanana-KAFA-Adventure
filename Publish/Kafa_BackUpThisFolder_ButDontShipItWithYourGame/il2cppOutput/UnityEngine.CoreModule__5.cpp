@@ -164,6 +164,10 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 {
 	bool ___m_value;
 };
+struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
+{
+	uint8_t ___m_value;
+};
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
 	float ___r;
@@ -1151,6 +1155,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF6
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_1_Invoke_mF2422B2DD29F74CE66F791C3F68E288EC7C3DB9E_gshared_inline (Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t MarshalledUnityObject_Marshal_TisRuntimeObject_m286B34400A212037E8EBD53DBFEAD7D23CDE8051_gshared_inline (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mDC887CA8191C6CADE1DB585D7FEB46B080B25038 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mB2D1C73EDFEA6815E39A0FE3ED2F7BF9A7117632 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 Cookie_Defaults_mBA9A3DBD2873EDB1AA0000FCBE687EBF960916BC (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mC034DE9D2F105C07BDE41C110D59E525894C78CA (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mFA4616AFF5FCCEC48B97704A64CDE4F8DBBC5A36 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m75C7688AFBDEAA33C4CA3C937163998A6013FE7E (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_InitNoBake_mBDF2EFB22D4BEE63B6F25F4EE9F1522D2866ED43 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, int32_t ___0_lightInstanceID, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Light_get_color_mE7EB8F11BF394877B50A2F335627441889ADE536 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_intensity_m8FA28D515853068A93FA68B2148809BBEE4E710F (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_bounceIntensity_m535008F539A0EF22BBB831113EC34F20D6331FAE (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
@@ -1183,7 +1198,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_dilatedRange_mE24AF6780C101F6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* Light_get_cookie_m44A0C4B92F6CD6F2F8536A91C51B77FEEF59715E (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Light_get_type_m0D12CD1E54E010DC401F7371731D593DEF62D1C7 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Light_get_cookieSize_m1BB417985207915659198F63CF825A23A8ED30B0 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* IntPtr_op_Explicit_m2728CBA081E79B97DDCF1D4FAD77B309CA1E94BF (intptr_t ___0_value, const RuntimeMethod* method) ;
 inline NativeArray_1_tDF6A1978B5813BF4DAD7948E398009FFC9BEA38D NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisLightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21_mC82DECEB698D4AABF41EE9DF0E1FC00C8803BD3A (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method)
@@ -1196,16 +1210,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m3FBD26AEC83F79DACB13A7EF6
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_m44511C1C63663F51CD77ABF24CC4B34B9A826F0F (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___1_dir, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_mF6521637E4DD97C8BBD71696B5A61C7B7B8C83D4 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_m47570BBE32168BBEA4C823D83C8A94A4CBF03AE2 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___1_point, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_m9F0C60CB137D268694B8CB324C73E799E1CE73F9 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___1_spot, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_m3B3FFE050376D624857D5D67413BD532518949F1 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* ___1_rect, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mDC887CA8191C6CADE1DB585D7FEB46B080B25038 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightmapperUtils_Extract_mA319A386DA025BF5F0B7D9C398ACD3BE3AF65ABB (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___0_l, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* ___1_disc, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mB2D1C73EDFEA6815E39A0FE3ED2F7BF9A7117632 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_InitNoBake_mBDF2EFB22D4BEE63B6F25F4EE9F1522D2866ED43 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, int32_t ___0_lightInstanceID, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 CameraPlayable_GetHandle_mA04469CA50B43AF6219F9967B8AEB310CB5455BD (CameraPlayable_t7C0B6B53C2B634321B1A077CEE8F68CE17C8BEF1* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PlayableHandle_op_Equality_m0E6C48A28F75A870AC22ADE3BD42F7F70A43C99C (PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 ___0_x, PlayableHandle_t5D6A01EF94382EFEDC047202F71DF882769654D4 ___1_y, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CameraPlayable_Equals_mD0FA195F3EA6511043E8F0AA1680CEB7E0E2E2CF (CameraPlayable_t7C0B6B53C2B634321B1A077CEE8F68CE17C8BEF1* __this, CameraPlayable_t7C0B6B53C2B634321B1A077CEE8F68CE17C8BEF1 ___0_other, const RuntimeMethod* method) ;
@@ -1275,6 +1283,1118 @@ inline intptr_t MarshalledUnityObject_MarshalNotNull_TisRuntimeObject_mEB1AA6B67
 {
 	return ((  intptr_t (*) (RuntimeObject*, const RuntimeMethod*))MarshalledUnityObject_MarshalNotNull_TisRuntimeObject_mEB1AA6B672D00242BB9DCE007056EC0E9C8DB075_gshared_inline)(___0_obj, method);
 }
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke(const DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB& unmarshaled, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_pinvoke& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___penumbraWidthRadian = unmarshaled.___penumbraWidthRadian;
+	marshaled.___direction = unmarshaled.___direction;
+}
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_back(const DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_pinvoke& marshaled, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledpenumbraWidthRadian_temp_7 = 0.0f;
+	unmarshaledpenumbraWidthRadian_temp_7 = marshaled.___penumbraWidthRadian;
+	unmarshaled.___penumbraWidthRadian = unmarshaledpenumbraWidthRadian_temp_7;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaleddirection_temp_8;
+	memset((&unmarshaleddirection_temp_8), 0, sizeof(unmarshaleddirection_temp_8));
+	unmarshaleddirection_temp_8 = marshaled.___direction;
+	unmarshaled.___direction = unmarshaleddirection_temp_8;
+}
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_pinvoke_cleanup(DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_com(const DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB& unmarshaled, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_com& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___penumbraWidthRadian = unmarshaled.___penumbraWidthRadian;
+	marshaled.___direction = unmarshaled.___direction;
+}
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_com_back(const DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_com& marshaled, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledpenumbraWidthRadian_temp_7 = 0.0f;
+	unmarshaledpenumbraWidthRadian_temp_7 = marshaled.___penumbraWidthRadian;
+	unmarshaled.___penumbraWidthRadian = unmarshaledpenumbraWidthRadian_temp_7;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaleddirection_temp_8;
+	memset((&unmarshaleddirection_temp_8), 0, sizeof(unmarshaleddirection_temp_8));
+	unmarshaleddirection_temp_8 = marshaled.___direction;
+	unmarshaled.___direction = unmarshaleddirection_temp_8;
+}
+IL2CPP_EXTERN_C void DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshal_com_cleanup(DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke(const PointLight_tD01A1428DC1015D98A527136034187F732433EA7& unmarshaled, PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_pinvoke& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___sphereRadius = unmarshaled.___sphereRadius;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_back(const PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_pinvoke& marshaled, PointLight_tD01A1428DC1015D98A527136034187F732433EA7& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledsphereRadius_temp_8 = 0.0f;
+	unmarshaledsphereRadius_temp_8 = marshaled.___sphereRadius;
+	unmarshaled.___sphereRadius = unmarshaledsphereRadius_temp_8;
+	uint8_t unmarshaledfalloff_temp_9 = 0;
+	unmarshaledfalloff_temp_9 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_9;
+}
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_pinvoke_cleanup(PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_com(const PointLight_tD01A1428DC1015D98A527136034187F732433EA7& unmarshaled, PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_com& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___sphereRadius = unmarshaled.___sphereRadius;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_com_back(const PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_com& marshaled, PointLight_tD01A1428DC1015D98A527136034187F732433EA7& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledsphereRadius_temp_8 = 0.0f;
+	unmarshaledsphereRadius_temp_8 = marshaled.___sphereRadius;
+	unmarshaled.___sphereRadius = unmarshaledsphereRadius_temp_8;
+	uint8_t unmarshaledfalloff_temp_9 = 0;
+	unmarshaledfalloff_temp_9 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_9;
+}
+IL2CPP_EXTERN_C void PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshal_com_cleanup(PointLight_tD01A1428DC1015D98A527136034187F732433EA7_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_pinvoke(const SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869& unmarshaled, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_pinvoke& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___sphereRadius = unmarshaled.___sphereRadius;
+	marshaled.___coneAngle = unmarshaled.___coneAngle;
+	marshaled.___innerConeAngle = unmarshaled.___innerConeAngle;
+	marshaled.___falloff = unmarshaled.___falloff;
+	marshaled.___angularFalloff = unmarshaled.___angularFalloff;
+}
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_pinvoke_back(const SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_pinvoke& marshaled, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledsphereRadius_temp_8 = 0.0f;
+	unmarshaledsphereRadius_temp_8 = marshaled.___sphereRadius;
+	unmarshaled.___sphereRadius = unmarshaledsphereRadius_temp_8;
+	float unmarshaledconeAngle_temp_9 = 0.0f;
+	unmarshaledconeAngle_temp_9 = marshaled.___coneAngle;
+	unmarshaled.___coneAngle = unmarshaledconeAngle_temp_9;
+	float unmarshaledinnerConeAngle_temp_10 = 0.0f;
+	unmarshaledinnerConeAngle_temp_10 = marshaled.___innerConeAngle;
+	unmarshaled.___innerConeAngle = unmarshaledinnerConeAngle_temp_10;
+	uint8_t unmarshaledfalloff_temp_11 = 0;
+	unmarshaledfalloff_temp_11 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_11;
+	uint8_t unmarshaledangularFalloff_temp_12 = 0;
+	unmarshaledangularFalloff_temp_12 = marshaled.___angularFalloff;
+	unmarshaled.___angularFalloff = unmarshaledangularFalloff_temp_12;
+}
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_pinvoke_cleanup(SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_com(const SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869& unmarshaled, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_com& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___sphereRadius = unmarshaled.___sphereRadius;
+	marshaled.___coneAngle = unmarshaled.___coneAngle;
+	marshaled.___innerConeAngle = unmarshaled.___innerConeAngle;
+	marshaled.___falloff = unmarshaled.___falloff;
+	marshaled.___angularFalloff = unmarshaled.___angularFalloff;
+}
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_com_back(const SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_com& marshaled, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledsphereRadius_temp_8 = 0.0f;
+	unmarshaledsphereRadius_temp_8 = marshaled.___sphereRadius;
+	unmarshaled.___sphereRadius = unmarshaledsphereRadius_temp_8;
+	float unmarshaledconeAngle_temp_9 = 0.0f;
+	unmarshaledconeAngle_temp_9 = marshaled.___coneAngle;
+	unmarshaled.___coneAngle = unmarshaledconeAngle_temp_9;
+	float unmarshaledinnerConeAngle_temp_10 = 0.0f;
+	unmarshaledinnerConeAngle_temp_10 = marshaled.___innerConeAngle;
+	unmarshaled.___innerConeAngle = unmarshaledinnerConeAngle_temp_10;
+	uint8_t unmarshaledfalloff_temp_11 = 0;
+	unmarshaledfalloff_temp_11 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_11;
+	uint8_t unmarshaledangularFalloff_temp_12 = 0;
+	unmarshaledangularFalloff_temp_12 = marshaled.___angularFalloff;
+	unmarshaled.___angularFalloff = unmarshaledangularFalloff_temp_12;
+}
+IL2CPP_EXTERN_C void SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshal_com_cleanup(SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_pinvoke(const RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698& unmarshaled, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_pinvoke& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___width = unmarshaled.___width;
+	marshaled.___height = unmarshaled.___height;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_pinvoke_back(const RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_pinvoke& marshaled, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledwidth_temp_8 = 0.0f;
+	unmarshaledwidth_temp_8 = marshaled.___width;
+	unmarshaled.___width = unmarshaledwidth_temp_8;
+	float unmarshaledheight_temp_9 = 0.0f;
+	unmarshaledheight_temp_9 = marshaled.___height;
+	unmarshaled.___height = unmarshaledheight_temp_9;
+	uint8_t unmarshaledfalloff_temp_10 = 0;
+	unmarshaledfalloff_temp_10 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_10;
+}
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_pinvoke_cleanup(RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_com(const RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698& unmarshaled, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_com& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___width = unmarshaled.___width;
+	marshaled.___height = unmarshaled.___height;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_com_back(const RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_com& marshaled, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledwidth_temp_8 = 0.0f;
+	unmarshaledwidth_temp_8 = marshaled.___width;
+	unmarshaled.___width = unmarshaledwidth_temp_8;
+	float unmarshaledheight_temp_9 = 0.0f;
+	unmarshaledheight_temp_9 = marshaled.___height;
+	unmarshaled.___height = unmarshaledheight_temp_9;
+	uint8_t unmarshaledfalloff_temp_10 = 0;
+	unmarshaledfalloff_temp_10 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_10;
+}
+IL2CPP_EXTERN_C void RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshal_com_cleanup(RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke(const DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E& unmarshaled, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_pinvoke& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___radius = unmarshaled.___radius;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_back(const DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_pinvoke& marshaled, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledradius_temp_8 = 0.0f;
+	unmarshaledradius_temp_8 = marshaled.___radius;
+	unmarshaled.___radius = unmarshaledradius_temp_8;
+	uint8_t unmarshaledfalloff_temp_9 = 0;
+	unmarshaledfalloff_temp_9 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_9;
+}
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_pinvoke_cleanup(DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_com(const DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E& unmarshaled, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_com& marshaled)
+{
+	marshaled.___instanceID = unmarshaled.___instanceID;
+	marshaled.___shadow = static_cast<int32_t>(unmarshaled.___shadow);
+	marshaled.___mode = unmarshaled.___mode;
+	marshaled.___position = unmarshaled.___position;
+	marshaled.___orientation = unmarshaled.___orientation;
+	marshaled.___color = unmarshaled.___color;
+	marshaled.___indirectColor = unmarshaled.___indirectColor;
+	marshaled.___range = unmarshaled.___range;
+	marshaled.___radius = unmarshaled.___radius;
+	marshaled.___falloff = unmarshaled.___falloff;
+}
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_com_back(const DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_com& marshaled, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E& unmarshaled)
+{
+	int32_t unmarshaledinstanceID_temp_0 = 0;
+	unmarshaledinstanceID_temp_0 = marshaled.___instanceID;
+	unmarshaled.___instanceID = unmarshaledinstanceID_temp_0;
+	bool unmarshaledshadow_temp_1 = false;
+	unmarshaledshadow_temp_1 = static_cast<bool>(marshaled.___shadow);
+	unmarshaled.___shadow = unmarshaledshadow_temp_1;
+	uint8_t unmarshaledmode_temp_2 = 0;
+	unmarshaledmode_temp_2 = marshaled.___mode;
+	unmarshaled.___mode = unmarshaledmode_temp_2;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 unmarshaledposition_temp_3;
+	memset((&unmarshaledposition_temp_3), 0, sizeof(unmarshaledposition_temp_3));
+	unmarshaledposition_temp_3 = marshaled.___position;
+	unmarshaled.___position = unmarshaledposition_temp_3;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 unmarshaledorientation_temp_4;
+	memset((&unmarshaledorientation_temp_4), 0, sizeof(unmarshaledorientation_temp_4));
+	unmarshaledorientation_temp_4 = marshaled.___orientation;
+	unmarshaled.___orientation = unmarshaledorientation_temp_4;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledcolor_temp_5;
+	memset((&unmarshaledcolor_temp_5), 0, sizeof(unmarshaledcolor_temp_5));
+	unmarshaledcolor_temp_5 = marshaled.___color;
+	unmarshaled.___color = unmarshaledcolor_temp_5;
+	LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 unmarshaledindirectColor_temp_6;
+	memset((&unmarshaledindirectColor_temp_6), 0, sizeof(unmarshaledindirectColor_temp_6));
+	unmarshaledindirectColor_temp_6 = marshaled.___indirectColor;
+	unmarshaled.___indirectColor = unmarshaledindirectColor_temp_6;
+	float unmarshaledrange_temp_7 = 0.0f;
+	unmarshaledrange_temp_7 = marshaled.___range;
+	unmarshaled.___range = unmarshaledrange_temp_7;
+	float unmarshaledradius_temp_8 = 0.0f;
+	unmarshaledradius_temp_8 = marshaled.___radius;
+	unmarshaled.___radius = unmarshaledradius_temp_8;
+	uint8_t unmarshaledfalloff_temp_9 = 0;
+	unmarshaledfalloff_temp_9 = marshaled.___falloff;
+	unmarshaled.___falloff = unmarshaledfalloff_temp_9;
+}
+IL2CPP_EXTERN_C void DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshal_com_cleanup(DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 Cookie_Defaults_mBA9A3DBD2873EDB1AA0000FCBE687EBF960916BC (const RuntimeMethod* method) 
+{
+	Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		(&V_0)->___instanceID = 0;
+		(&V_0)->___scale = (1.0f);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_0), (1.0f), (1.0f), NULL);
+		(&V_0)->___sizes = L_0;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 L_1 = V_0;
+		V_1 = L_1;
+		goto IL_002f;
+	}
+
+IL_002f:
+	{
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 L_2 = V_1;
+		return L_2;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) 
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B2_0 = NULL;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B3_1 = NULL;
+	{
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_0 = ___0_light;
+		int32_t L_1 = L_0->___instanceID;
+		__this->___instanceID = L_1;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_2 = ___1_cookie;
+		int32_t L_3 = L_2->___instanceID;
+		__this->___cookieID = L_3;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_4 = ___1_cookie;
+		float L_5 = L_4->___scale;
+		__this->___cookieScale = L_5;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_6 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_7 = L_6->___color;
+		__this->___color = L_7;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_8 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_9 = L_8->___indirectColor;
+		__this->___indirectColor = L_9;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_10 = ___0_light;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = L_10->___orientation;
+		__this->___orientation = L_11;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_12 = ___0_light;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position;
+		__this->___position = L_13;
+		__this->___range = (0.0f);
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_14 = ___1_cookie;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_15 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_14->___sizes);
+		float L_16 = L_15->___x;
+		__this->___coneAngle = L_16;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_17 = ___1_cookie;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_18 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&L_17->___sizes);
+		float L_19 = L_18->___y;
+		__this->___innerConeAngle = L_19;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_20 = ___0_light;
+		float L_21 = L_20->___penumbraWidthRadian;
+		__this->___shape0 = L_21;
+		__this->___shape1 = (0.0f);
+		__this->___type = 0;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_22 = ___0_light;
+		uint8_t L_23 = L_22->___mode;
+		__this->___mode = L_23;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_24 = ___0_light;
+		bool L_25 = L_24->___shadow;
+		if (L_25)
+		{
+			G_B2_0 = __this;
+			goto IL_00b8;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_00b9;
+	}
+
+IL_00b8:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_00b9:
+	{
+		G_B3_1->___shadow = (uint8_t)((int32_t)(uint8_t)G_B3_0);
+		__this->___falloff = 4;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207_AdjustorThunk (RuntimeObject* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207(_thisAdjusted, ___0_light, ___1_cookie, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) 
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B2_0 = NULL;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B3_1 = NULL;
+	{
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_0 = ___0_light;
+		int32_t L_1 = L_0->___instanceID;
+		__this->___instanceID = L_1;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_2 = ___1_cookie;
+		int32_t L_3 = L_2->___instanceID;
+		__this->___cookieID = L_3;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_4 = ___1_cookie;
+		float L_5 = L_4->___scale;
+		__this->___cookieScale = L_5;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_6 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_7 = L_6->___color;
+		__this->___color = L_7;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_8 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_9 = L_8->___indirectColor;
+		__this->___indirectColor = L_9;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_10 = ___0_light;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = L_10->___orientation;
+		__this->___orientation = L_11;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_12 = ___0_light;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position;
+		__this->___position = L_13;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_14 = ___0_light;
+		float L_15 = L_14->___range;
+		__this->___range = L_15;
+		__this->___coneAngle = (0.0f);
+		__this->___innerConeAngle = (0.0f);
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_16 = ___0_light;
+		float L_17 = L_16->___sphereRadius;
+		__this->___shape0 = L_17;
+		__this->___shape1 = (0.0f);
+		__this->___type = 1;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_18 = ___0_light;
+		uint8_t L_19 = L_18->___mode;
+		__this->___mode = L_19;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_20 = ___0_light;
+		bool L_21 = L_20->___shadow;
+		if (L_21)
+		{
+			G_B2_0 = __this;
+			goto IL_00ad;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_00ae;
+	}
+
+IL_00ad:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_00ae:
+	{
+		G_B3_1->___shadow = (uint8_t)((int32_t)(uint8_t)G_B3_0);
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_22 = ___0_light;
+		uint8_t L_23 = L_22->___falloff;
+		__this->___falloff = L_23;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A_AdjustorThunk (RuntimeObject* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A(_thisAdjusted, ___0_light, ___1_cookie, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) 
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B2_0 = NULL;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B3_1 = NULL;
+	{
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_0 = ___0_light;
+		int32_t L_1 = L_0->___instanceID;
+		__this->___instanceID = L_1;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_2 = ___1_cookie;
+		int32_t L_3 = L_2->___instanceID;
+		__this->___cookieID = L_3;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_4 = ___1_cookie;
+		float L_5 = L_4->___scale;
+		__this->___cookieScale = L_5;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_6 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_7 = L_6->___color;
+		__this->___color = L_7;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_8 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_9 = L_8->___indirectColor;
+		__this->___indirectColor = L_9;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_10 = ___0_light;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = L_10->___orientation;
+		__this->___orientation = L_11;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_12 = ___0_light;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position;
+		__this->___position = L_13;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_14 = ___0_light;
+		float L_15 = L_14->___range;
+		__this->___range = L_15;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_16 = ___0_light;
+		float L_17 = L_16->___coneAngle;
+		__this->___coneAngle = L_17;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_18 = ___0_light;
+		float L_19 = L_18->___innerConeAngle;
+		__this->___innerConeAngle = L_19;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_20 = ___0_light;
+		float L_21 = L_20->___sphereRadius;
+		__this->___shape0 = L_21;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_22 = ___0_light;
+		uint8_t L_23 = L_22->___angularFalloff;
+		__this->___shape1 = ((float)L_23);
+		__this->___type = 2;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_24 = ___0_light;
+		uint8_t L_25 = L_24->___mode;
+		__this->___mode = L_25;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_26 = ___0_light;
+		bool L_27 = L_26->___shadow;
+		if (L_27)
+		{
+			G_B2_0 = __this;
+			goto IL_00b1;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_00b2;
+	}
+
+IL_00b1:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_00b2:
+	{
+		G_B3_1->___shadow = (uint8_t)((int32_t)(uint8_t)G_B3_0);
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_28 = ___0_light;
+		uint8_t L_29 = L_28->___falloff;
+		__this->___falloff = L_29;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B_AdjustorThunk (RuntimeObject* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B(_thisAdjusted, ___0_light, ___1_cookie, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mDC887CA8191C6CADE1DB585D7FEB46B080B25038 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) 
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B2_0 = NULL;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B3_1 = NULL;
+	{
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_0 = ___0_light;
+		int32_t L_1 = L_0->___instanceID;
+		__this->___instanceID = L_1;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_2 = ___1_cookie;
+		int32_t L_3 = L_2->___instanceID;
+		__this->___cookieID = L_3;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_4 = ___1_cookie;
+		float L_5 = L_4->___scale;
+		__this->___cookieScale = L_5;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_6 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_7 = L_6->___color;
+		__this->___color = L_7;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_8 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_9 = L_8->___indirectColor;
+		__this->___indirectColor = L_9;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_10 = ___0_light;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = L_10->___orientation;
+		__this->___orientation = L_11;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_12 = ___0_light;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position;
+		__this->___position = L_13;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_14 = ___0_light;
+		float L_15 = L_14->___range;
+		__this->___range = L_15;
+		__this->___coneAngle = (0.0f);
+		__this->___innerConeAngle = (0.0f);
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_16 = ___0_light;
+		float L_17 = L_16->___width;
+		__this->___shape0 = L_17;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_18 = ___0_light;
+		float L_19 = L_18->___height;
+		__this->___shape1 = L_19;
+		__this->___type = 3;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_20 = ___0_light;
+		uint8_t L_21 = L_20->___mode;
+		__this->___mode = L_21;
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_22 = ___0_light;
+		bool L_23 = L_22->___shadow;
+		if (L_23)
+		{
+			G_B2_0 = __this;
+			goto IL_00ae;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_00af;
+	}
+
+IL_00ae:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_00af:
+	{
+		G_B3_1->___shadow = (uint8_t)((int32_t)(uint8_t)G_B3_0);
+		RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* L_24 = ___0_light;
+		uint8_t L_25 = L_24->___falloff;
+		__this->___falloff = L_25;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_mDC887CA8191C6CADE1DB585D7FEB46B080B25038_AdjustorThunk (RuntimeObject* __this, RectangleLight_t6291A359474D9745D01709AF7FEDE6B6BE575698* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_mDC887CA8191C6CADE1DB585D7FEB46B080B25038(_thisAdjusted, ___0_light, ___1_cookie, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mB2D1C73EDFEA6815E39A0FE3ED2F7BF9A7117632 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method) 
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B2_0 = NULL;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* G_B3_1 = NULL;
+	{
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_0 = ___0_light;
+		int32_t L_1 = L_0->___instanceID;
+		__this->___instanceID = L_1;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_2 = ___1_cookie;
+		int32_t L_3 = L_2->___instanceID;
+		__this->___cookieID = L_3;
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* L_4 = ___1_cookie;
+		float L_5 = L_4->___scale;
+		__this->___cookieScale = L_5;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_6 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_7 = L_6->___color;
+		__this->___color = L_7;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_8 = ___0_light;
+		LinearColor_t60964F15C567D7FE5442C29298DCF20ABD8816C7 L_9 = L_8->___indirectColor;
+		__this->___indirectColor = L_9;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_10 = ___0_light;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_11 = L_10->___orientation;
+		__this->___orientation = L_11;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_12 = ___0_light;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = L_12->___position;
+		__this->___position = L_13;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_14 = ___0_light;
+		float L_15 = L_14->___range;
+		__this->___range = L_15;
+		__this->___coneAngle = (0.0f);
+		__this->___innerConeAngle = (0.0f);
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_16 = ___0_light;
+		float L_17 = L_16->___radius;
+		__this->___shape0 = L_17;
+		__this->___shape1 = (0.0f);
+		__this->___type = 4;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_18 = ___0_light;
+		uint8_t L_19 = L_18->___mode;
+		__this->___mode = L_19;
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_20 = ___0_light;
+		bool L_21 = L_20->___shadow;
+		if (L_21)
+		{
+			G_B2_0 = __this;
+			goto IL_00ad;
+		}
+		G_B1_0 = __this;
+	}
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B1_0;
+		goto IL_00ae;
+	}
+
+IL_00ad:
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_00ae:
+	{
+		G_B3_1->___shadow = (uint8_t)((int32_t)(uint8_t)G_B3_0);
+		DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* L_22 = ___0_light;
+		uint8_t L_23 = L_22->___falloff;
+		__this->___falloff = L_23;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_mB2D1C73EDFEA6815E39A0FE3ED2F7BF9A7117632_AdjustorThunk (RuntimeObject* __this, DiscLight_t59DBA24695372AB69E18F7197D8215A9BA826B5E* ___0_light, Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0* ___1_cookie, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_mB2D1C73EDFEA6815E39A0FE3ED2F7BF9A7117632(_thisAdjusted, ___0_light, ___1_cookie, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mC034DE9D2F105C07BDE41C110D59E525894C78CA (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, const RuntimeMethod* method) 
+{
+	Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 L_0;
+		L_0 = Cookie_Defaults_mBA9A3DBD2873EDB1AA0000FCBE687EBF960916BC(NULL);
+		V_0 = L_0;
+		DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* L_1 = ___0_light;
+		LightDataGI_Init_m112DEBB76EC57AC52E6384C97A3E8B2EAA867207(__this, L_1, (&V_0), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_mC034DE9D2F105C07BDE41C110D59E525894C78CA_AdjustorThunk (RuntimeObject* __this, DirectionalLight_t8DB2E20F494363D841151C4E59EEB127E2AEB2FB* ___0_light, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_mC034DE9D2F105C07BDE41C110D59E525894C78CA(_thisAdjusted, ___0_light, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_mFA4616AFF5FCCEC48B97704A64CDE4F8DBBC5A36 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, const RuntimeMethod* method) 
+{
+	Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 L_0;
+		L_0 = Cookie_Defaults_mBA9A3DBD2873EDB1AA0000FCBE687EBF960916BC(NULL);
+		V_0 = L_0;
+		PointLight_tD01A1428DC1015D98A527136034187F732433EA7* L_1 = ___0_light;
+		LightDataGI_Init_mACE06E00CC639CA89F3847E9DB55FD0F00812A7A(__this, L_1, (&V_0), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_mFA4616AFF5FCCEC48B97704A64CDE4F8DBBC5A36_AdjustorThunk (RuntimeObject* __this, PointLight_tD01A1428DC1015D98A527136034187F732433EA7* ___0_light, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_mFA4616AFF5FCCEC48B97704A64CDE4F8DBBC5A36(_thisAdjusted, ___0_light, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_Init_m75C7688AFBDEAA33C4CA3C937163998A6013FE7E (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, const RuntimeMethod* method) 
+{
+	Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Cookie_tA61BB2790E12D696A65444ACF3E636B3EF2AC3A0 L_0;
+		L_0 = Cookie_Defaults_mBA9A3DBD2873EDB1AA0000FCBE687EBF960916BC(NULL);
+		V_0 = L_0;
+		SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* L_1 = ___0_light;
+		LightDataGI_Init_m0A999D118CDCBDA99B9E24231ED057D943C9C67B(__this, L_1, (&V_0), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_Init_m75C7688AFBDEAA33C4CA3C937163998A6013FE7E_AdjustorThunk (RuntimeObject* __this, SpotLight_t8C9291BCACE4E56454E49756C61511EB95353869* ___0_light, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_Init_m75C7688AFBDEAA33C4CA3C937163998A6013FE7E(_thisAdjusted, ___0_light, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightDataGI_InitNoBake_mBDF2EFB22D4BEE63B6F25F4EE9F1522D2866ED43 (LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* __this, int32_t ___0_lightInstanceID, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_lightInstanceID;
+		__this->___instanceID = L_0;
+		__this->___mode = 3;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void LightDataGI_InitNoBake_mBDF2EFB22D4BEE63B6F25F4EE9F1522D2866ED43_AdjustorThunk (RuntimeObject* __this, int32_t ___0_lightInstanceID, const RuntimeMethod* method)
+{
+	LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<LightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21*>(__this + _offset);
+	LightDataGI_InitNoBake_mBDF2EFB22D4BEE63B6F25F4EE9F1522D2866ED43(_thisAdjusted, ___0_lightInstanceID, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -4371,6 +5491,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SpriteAtlas_CanBindTo_Injected_m3439431E
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{
@@ -4381,16 +5511,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F187
 		float L_2 = ___2_b;
 		__this->___b = L_2;
 		__this->___a = (1.0f);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
-{
-	{
-		float L_0 = ___0_x;
-		__this->___x = L_0;
-		float L_1 = ___1_y;
-		__this->___y = L_1;
 		return;
 	}
 }

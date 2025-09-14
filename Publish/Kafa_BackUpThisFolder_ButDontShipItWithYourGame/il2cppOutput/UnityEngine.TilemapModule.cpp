@@ -86,11 +86,13 @@ IL2CPP_EXTERN_C const RuntimeMethod* MarshalledUnityObject_Marshal_TisSpriteAtla
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m5C4C6FA53CA05FE88CA7926E8B1C0DF717B63550_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mD61DE9D9D0F7E928CED8EA63A59BD8BE1276D07C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisVector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_m68CCE7D85BD452D727A41279CA4D553EE8B627FF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Copy_m4515C6A6B64476716833B9C22AAE07185976AF24_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_Dispose_mAB8B3AE6332BF29F21711643D4FFE57E30E1E055_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1__ctor_m29DAD3F6139353D219E363E2C63BC183CBC778E2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* NativeArray_1_get_IsCreated_mE992FB4B97CD24CAF70D23773821AE2687DC4A30_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TilemapRenderer_OnSpriteAtlasRegistered_m4348D78754045C8B10CEA76195A313790F412ED1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeType* SyncTile_t0F06ED3A2623F91411C6F4773D87AB58EAD4EC2C_0_0_0_var;
 IL2CPP_EXTERN_C const RuntimeType* TileAnimationData_tB7419BC111545576349DD19CAB0DEFD240CAF149_0_0_0_var;
 struct Delegate_t_marshaled_com;
@@ -660,6 +662,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NativeArray_1_get_IsCreated_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m5C4C6FA53CA05FE88CA7926E8B1C0DF717B63550_gshared (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t245D7224A42D1A32B87C64E49B7B434585EC91EF NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisVector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_m68CCE7D85BD452D727A41279CA4D553EE8B627FF_gshared (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mD61DE9D9D0F7E928CED8EA63A59BD8BE1276D07C_gshared (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621_gshared (NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C ___0_nativeArray, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_gshared_inline (void* ___0_ptr, int32_t ___1_index, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7B85C2674B1EB0681F20E9C5AF3D19563459CBC0_gshared_inline (Action_2_t0302727DEEDCFCC692E80AEEC31B8066AE8C5550* __this, RuntimeObject* ___0_arg1, NativeArray_1_t245D7224A42D1A32B87C64E49B7B434585EC91EF ___1_arg2, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t MarshalledUnityObject_MarshalNotNull_TisRuntimeObject_mEB1AA6B672D00242BB9DCE007056EC0E9C8DB075_gshared_inline (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
@@ -700,6 +704,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tilemap_RefreshTilesNative_mD73E77DFD7C8
 inline NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mD61DE9D9D0F7E928CED8EA63A59BD8BE1276D07C (void* ___0_dataPointer, int32_t ___1_length, int32_t ___2_allocator, const RuntimeMethod* method)
 {
 	return ((  NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C (*) (void*, int32_t, int32_t, const RuntimeMethod*))NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mD61DE9D9D0F7E928CED8EA63A59BD8BE1276D07C_gshared)(___0_dataPointer, ___1_length, ___2_allocator, method);
+}
+inline void* NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621 (NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C ___0_nativeArray, const RuntimeMethod* method)
+{
+	return ((  void* (*) (NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C, const RuntimeMethod*))NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621_gshared)(___0_nativeArray, method);
+}
+inline TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_inline (void* ___0_ptr, int32_t ___1_index, const RuntimeMethod* method)
+{
+	return ((  TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* (*) (void*, int32_t, const RuntimeMethod*))UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_gshared_inline)(___0_ptr, ___1_index, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileData_set_sprite_m3566544847F9C9C27EDB154324B6FBDB446EFE94 (TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileData_set_color_m5E759823878243A226EF46419FAD7C0CC3D5F40A (TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
@@ -1117,9 +1129,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ITilemap_GetAllTileData_m3B6CF200F925322
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m5C4C6FA53CA05FE88CA7926E8B1C0DF717B63550_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mD61DE9D9D0F7E928CED8EA63A59BD8BE1276D07C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisVector3Int_t65CB06F557251D18A37BD71F3655BA836A357376_m68CCE7D85BD452D727A41279CA4D553EE8B627FF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileBase_t07019BD771D35E8EA68118157D6EEE4C770CF0F9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	void* V_0 = NULL;
@@ -1181,7 +1195,7 @@ IL_003b:
 		bool L_16 = V_9;
 		if (!L_16)
 		{
-			goto IL_007d;
+			goto IL_0089;
 		}
 	}
 	{
@@ -1195,26 +1209,29 @@ IL_003b:
 		Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376 L_21;
 		L_21 = IL2CPP_NATIVEARRAY_GET_ITEM(Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, ((&V_4))->___m_Buffer, L_20);
 		ITilemap_tCD8B9C2D6A80DB1DFE9C934D91EACE6B8A018164* L_22 = ___0_tilemap;
+		NativeArray_1_t1520D9CD4959D9455C36ED19E490DBDC32B6EF5C L_23 = V_5;
+		void* L_24;
+		L_24 = NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621(L_23, NativeArrayUnsafeUtility_GetUnsafePtr_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mE48D9F4DD8A7C60202ED5593585012E44ECA6621_RuntimeMethod_var);
+		int32_t L_25 = V_6;
+		TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* L_26;
+		L_26 = UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_inline(L_24, L_25, UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_RuntimeMethod_var);
 		NullCheck(L_19);
-		VirtualActionInvoker3< Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, ITilemap_tCD8B9C2D6A80DB1DFE9C934D91EACE6B8A018164*, TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* >::Invoke(5, L_19, L_21, L_22, (&V_7));
+		VirtualActionInvoker3< Vector3Int_t65CB06F557251D18A37BD71F3655BA836A357376, ITilemap_tCD8B9C2D6A80DB1DFE9C934D91EACE6B8A018164*, TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* >::Invoke(5, L_19, L_21, L_22, L_26);
 	}
 
-IL_007d:
+IL_0089:
 	{
-		int32_t L_23 = V_6;
-		TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F L_24 = V_7;
-		IL2CPP_NATIVEARRAY_SET_ITEM(TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F, ((&V_5))->___m_Buffer, L_23, (L_24));
-		int32_t L_25 = V_6;
-		V_6 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+		int32_t L_27 = V_6;
+		V_6 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_0090:
 	{
-		int32_t L_26 = V_6;
-		int32_t L_27 = ___1_count;
-		V_11 = (bool)((((int32_t)L_26) < ((int32_t)L_27))? 1 : 0);
-		bool L_28 = V_11;
-		if (L_28)
+		int32_t L_28 = V_6;
+		int32_t L_29 = ___1_count;
+		V_11 = (bool)((((int32_t)L_28) < ((int32_t)L_29))? 1 : 0);
+		bool L_30 = V_11;
+		if (L_30)
 		{
 			goto IL_003b;
 		}
@@ -2649,20 +2666,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void* IntPtr_ToPointer_m1A0612EED
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
 {
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
-	memset((&V_0), 0, sizeof(V_0));
 	{
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
 		memset((&L_0), 0, sizeof(L_0));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), NULL);
-		V_0 = L_0;
-		goto IL_001d;
-	}
-
-IL_001d:
-	{
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
-		return L_1;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_get_identity_m6568A73831F3E2D587420D20FF423959D7D8AB56_inline (const RuntimeMethod* method) 
@@ -2692,6 +2700,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool NativeArray_1_get_IsCreated_
 	{
 		void* L_0 = __this->___m_Buffer;
 		return (bool)((((int32_t)((((intptr_t)L_0) == ((intptr_t)((uintptr_t)0)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F* UnsafeUtility_ArrayElementAsRef_TisTileData_tFB814629D010ABD175127C0BE96FD96EA606E00F_mA5DDA5569C1AB3A1182D7F0AAF5ACCB93020DBFD_gshared_inline (void* ___0_ptr, int32_t ___1_index, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_ptr;
+		int32_t L_1 = ___1_index;
+		uint32_t L_2 = sizeof(TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F);
+		return (TileData_tFB814629D010ABD175127C0BE96FD96EA606E00F*)(((void*)il2cpp_codegen_add((intptr_t)L_0, ((intptr_t)((int64_t)il2cpp_codegen_multiply(((int64_t)L_1), ((int64_t)((int32_t)L_2))))))));
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7B85C2674B1EB0681F20E9C5AF3D19563459CBC0_gshared_inline (Action_2_t0302727DEEDCFCC692E80AEEC31B8066AE8C5550* __this, RuntimeObject* ___0_arg1, NativeArray_1_t245D7224A42D1A32B87C64E49B7B434585EC91EF ___1_arg2, const RuntimeMethod* method) 

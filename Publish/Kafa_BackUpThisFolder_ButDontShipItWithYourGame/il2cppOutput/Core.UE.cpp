@@ -2573,7 +2573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CoreExtensions_GetFields_m0640DD1BE
 		L_3 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(L_2, NULL);
 		NullCheck(L_3);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_4;
-		L_4 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(83, L_3, ((int32_t)52));
+		L_4 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(84, L_3, ((int32_t)52));
 		V_1 = L_4;
 		V_4 = 0;
 		goto IL_021c;
@@ -2660,7 +2660,7 @@ IL_0021:
 		Type_t* L_33 = V_6;
 		NullCheck(L_33);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_34;
-		L_34 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(83, L_33, ((int32_t)52));
+		L_34 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(84, L_33, ((int32_t)52));
 		V_7 = L_34;
 		RuntimeObject* L_35 = V_3;
 		V_8 = ((RuntimeObject*)Castclass((RuntimeObject*)L_35, IList_t1C522956D79B7DC92B5B01053DF1AC058C8B598D_il2cpp_TypeInfo_var));
@@ -3789,7 +3789,7 @@ IL_0037:
 		Type_t* L_3 = __this->___type;
 		NullCheck(L_3);
 		Type_t* L_4;
-		L_4 = VirtualFuncInvoker0< Type_t* >::Invoke(107, L_3);
+		L_4 = VirtualFuncInvoker0< Type_t* >::Invoke(109, L_3);
 		__this->___U3CbaseTypeU3E5__2 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbaseTypeU3E5__2), (void*)L_4);
 		goto IL_007e;
@@ -3810,7 +3810,7 @@ IL_0066:
 		Type_t* L_6 = __this->___U3CbaseTypeU3E5__2;
 		NullCheck(L_6);
 		Type_t* L_7;
-		L_7 = VirtualFuncInvoker0< Type_t* >::Invoke(107, L_6);
+		L_7 = VirtualFuncInvoker0< Type_t* >::Invoke(109, L_6);
 		__this->___U3CbaseTypeU3E5__2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbaseTypeU3E5__2), (void*)L_7);
 	}

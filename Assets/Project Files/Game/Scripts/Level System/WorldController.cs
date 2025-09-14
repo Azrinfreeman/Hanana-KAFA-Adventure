@@ -99,6 +99,8 @@ namespace Watermelon
 
         public void LoadWorld(string worldID)
         {
+            // SceneManager.UnloadSceneAsync("World 0");
+            GameController.questionController.GetComponent<Transform>().gameObject.SetActive(true);
             worldGlobalSave.worldID = worldID;
 
             LoadWorld(database.GetWorldByID(worldID));

@@ -17,10 +17,16 @@ namespace Watermelon
         UIController uiController;
 
         [SerializeField]
+        public static QuestionController questionController;
+
+        [SerializeField]
         DefaultMusicController defaultMusicController;
 
         [SerializeField]
         CameraController cameraController;
+
+        [SerializeField]
+        public static CanvasGroup uigameCanvas;
 
         private static WorldController worldController;
         private static GlobalUpgradesController globalUpgradesController;
@@ -84,6 +90,11 @@ namespace Watermelon
             particlesController.Init();
 
             navigationHelper.Initialise();
+
+            uigameCanvas = GameObject.Find("UI Game").GetComponent<CanvasGroup>();
+            questionController = GameObject
+                .Find("QuestionController")
+                .GetComponent<QuestionController>();
         }
 
         private void Start()
@@ -93,6 +104,11 @@ namespace Watermelon
                 DefaultMusicController.ActivateMusic();
 
                 UIController.ShowPage<UIMainMenu>();
+                Control.DisableMovementControl();
+                uigameCanvas.alpha = 0f;
+                //load background scene
+                //SceneManager.LoadScene("World 0", LoadSceneMode.Additive);
+                questionController.GetComponent<Transform>().gameObject.SetActive(false);
             }
             else
             {
@@ -123,12 +139,35 @@ namespace Watermelon
 
         public static void LoadLevel1()
         {
-            worldController.LoadWorld("608437bb-6374-4923-8489-096284bf32cc");
+            Control.EnableMovementControl();
+            uigameCanvas.alpha = 1f;
+            worldController.LoadWorld("64237034-5379-4daf-b152-be8359ced037");
         }
 
         public static void LoadLevel2()
         {
+            Control.EnableMovementControl();
+            uigameCanvas.alpha = 1f;
             worldController.LoadWorld("6658372b-e731-4539-a2aa-3bce2e7e0dd2");
+        }
+
+        public static void LoadLevel3()
+        {
+            Control.EnableMovementControl();
+            uigameCanvas.alpha = 1f;
+            worldController.LoadWorld("b22c70f1-a827-4dca-a75b-3914dcf2b0c5");
+        }
+
+        public static void LoadLevel4()
+        {
+            Control.EnableMovementControl();
+            uigameCanvas.alpha = 1f;
+            worldController.LoadWorld("0bdd3d6f-e8e1-49d3-b22f-bf0099d78bdd");
+        }
+
+        public static void LoadCurrentWorld()
+        {
+            worldController.LoadCurrentWorld();
         }
 
         public static void OpenMainMenu()
