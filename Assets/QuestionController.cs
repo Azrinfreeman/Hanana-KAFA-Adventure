@@ -68,6 +68,7 @@ namespace Watermelon
                     255
                 );
                 GameObject.Find("rewarded").GetComponent<AudioSource>().Play();
+                GameObject.Find("yay").GetComponent<AudioSource>().Play();
             }
             ScoreController.instance.AddScore(10);
             tick.gameObject.SetActive(true);
@@ -248,6 +249,7 @@ namespace Watermelon
                     255
                 );
                 GameObject.Find("wrong").GetComponent<AudioSource>().Play();
+                GameObject.Find("aww").GetComponent<AudioSource>().Play();
             }
             cross.gameObject.SetActive(true);
             yield return new WaitForSeconds(2f);

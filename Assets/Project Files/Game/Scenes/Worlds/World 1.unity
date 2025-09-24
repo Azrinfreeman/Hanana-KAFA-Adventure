@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 15770474}
   - component: {fileID: 15770475}
   m_Layer: 0
-  m_Name: M #03 - craft scissors
+  m_Name: M #03 - Penghasilan Gunting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 352b09c3-e3d2-4686-9c1b-4eefe52d57d6
-  title: Craft scissors
+  title: Hasilkan gunting
   rewardType: 0
   resourceReward:
     currencyType: 500
@@ -696,7 +696,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 500
   amount: 3
 --- !u!1001 &16643589
@@ -10948,7 +10960,7 @@ GameObject:
   - component: {fileID: 269448811}
   - component: {fileID: 269448812}
   m_Layer: 0
-  m_Name: M #08 - jam cooking
+  m_Name: M #08 - Masak Jem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10983,7 +10995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3a7ecd45-b1da-46d9-97d1-8036e2eac343
-  title: Cook some Jam
+  title: Masak Jem
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -18410,7 +18422,7 @@ GameObject:
   - component: {fileID: 422921082}
   - component: {fileID: 422921083}
   m_Layer: 0
-  m_Name: M #13 - tent building
+  m_Name: M #13 - Pembinaan Khemah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18444,7 +18456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: bfb5ea19-371c-4684-8553-4ea61e501344
-  title: Build the tent
+  title: Dirikan Khemah
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -20189,7 +20201,7 @@ GameObject:
   - component: {fileID: 475948696}
   - component: {fileID: 475948697}
   m_Layer: 0
-  m_Name: M #16 - upg craft speed
+  m_Name: M #16 - Naiktaraf Kelajuan Pembinaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20223,7 +20235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: d6653a10-1a17-47bb-96f1-a165e47b8457
-  title: Upgrade craft speed to lvl 3
+  title: Naiktaraf Kelajuan Pembinaan Ke Level 3
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -20258,7 +20270,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   upgradeType: 1
   globalUpgradeType: 0
   localUpgrade: {fileID: 505285912}
@@ -23897,7 +23921,7 @@ GameObject:
   - component: {fileID: 560373834}
   - component: {fileID: 560373835}
   m_Layer: 0
-  m_Name: M #01 - wood harvest
+  m_Name: M #01 - Pemecahan Batu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23932,7 +23956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 67cf59cb-32b4-43af-b38a-829e3f04a4e9
-  title: Collect some wood
+  title: Kumpul beberapa kayu
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -23967,7 +23991,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 1
   amount: 5
 --- !u!1001 &561219960
@@ -50457,7 +50493,7 @@ GameObject:
   - component: {fileID: 1116972647}
   - component: {fileID: 1116972648}
   m_Layer: 0
-  m_Name: M #15 - food storage building
+  m_Name: M #15 - Simpanan Makanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50491,7 +50527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: ccef317c-aa02-49d0-b851-9be3c3924990
-  title: Build storage for food
+  title: Bina Simpanan Untuk Makanan
   rewardType: 0
   resourceReward:
     currencyType: 100
@@ -50551,7 +50587,7 @@ GameObject:
   - component: {fileID: 1118120859}
   - component: {fileID: 1118120860}
   m_Layer: 0
-  m_Name: M #02 - stone harvest
+  m_Name: M #02 - Pemecahan Kayu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50586,7 +50622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 7eeabcff-440c-4044-b49c-107a0596abde
-  title: Collect stone
+  title: Kumpul beberapa batu
   rewardType: 0
   resourceReward:
     currencyType: 2
@@ -50621,7 +50657,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 2
   amount: 5
 --- !u!1001 &1118184679
@@ -59595,7 +59643,7 @@ GameObject:
   - component: {fileID: 1351028547}
   - component: {fileID: 1351028548}
   m_Layer: 0
-  m_Name: M #07 - berries harvest
+  m_Name: M #07 - Pengumpulan Buah Anggur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59630,7 +59678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2cd4e8db-90fa-49f5-a7c3-ddbc512a18d1
-  title: Collect Berries
+  title: Kutip Buah Anggur
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -59665,7 +59713,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 100
   amount: 10
 --- !u!114 &1353639218 stripped
@@ -62146,7 +62206,7 @@ GameObject:
   - component: {fileID: 1423833718}
   - component: {fileID: 1423833719}
   m_Layer: 0
-  m_Name: M #06 - cooking place building
+  m_Name: M #06 - Pembuatan Tempat Memasak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62181,7 +62241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 69925f56-c9f5-4bd0-98c9-c260eca64738
-  title: Build Cooking Place
+  title: Bina Tempat Memasak
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -76447,7 +76507,7 @@ GameObject:
   - component: {fileID: 1752380779}
   - component: {fileID: 1752380780}
   m_Layer: 0
-  m_Name: M #14 - upg player speed
+  m_Name: M #14 - Naiktaraf Kelajuan Pemain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76482,7 +76542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 03de7819-5c0c-442c-ac39-0f67af4e56d2
-  title: Upgrade player speed
+  title: Naiktaraf Kelajuan Pemain
   rewardType: 2
   resourceReward:
     currencyType: 2
@@ -76517,7 +76577,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   upgradeType: 0
   globalUpgradeType: 0
   localUpgrade: {fileID: 0}
@@ -76922,7 +76994,7 @@ GameObject:
   - component: {fileID: 1768670545}
   - component: {fileID: 1768670546}
   m_Layer: 0
-  m_Name: M #38 - raft unlock
+  m_Name: 'M #38 - Cari Tempat '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77257,7 +77329,7 @@ GameObject:
   - component: {fileID: 1792338066}
   - component: {fileID: 1792338067}
   m_Layer: 0
-  m_Name: M #09 - helper #1
+  m_Name: M #09 - Penolong #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77291,7 +77363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4b6a60ad-4349-4bac-b28f-a95242e099fa
-  title: Save another survivor
+  title: Selamatkan Yang Masih Hidup
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -77326,7 +77398,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   helperBehavior: {fileID: 1327118833}
 --- !u!1001 &1797956778
 PrefabInstance:
@@ -80652,7 +80736,7 @@ GameObject:
   - component: {fileID: 1849361657}
   - component: {fileID: 1849361658}
   m_Layer: 0
-  m_Name: M #12 - ground for tent
+  m_Name: M #12 - Mencari Tempat Untuk Khemah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80686,7 +80770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 72aa15c7-71ed-49c5-b1cb-e858a46310f9
-  title: Keep Expanding
+  title: Teruskan Mengembara
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -80721,7 +80805,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1950274050}
 --- !u!1001 &1852426831
 PrefabInstance:
@@ -83409,7 +83505,7 @@ GameObject:
   - component: {fileID: 1918839487}
   - component: {fileID: 1918839488}
   m_Layer: 0
-  m_Name: M #04 - clean the land
+  m_Name: M #04 - Pemotongan rumput-rumput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83443,7 +83539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3efd8a51-a7b9-4d34-ab69-726550afe2c9
-  title: Clean the land
+  title: Potong rumput
   rewardType: 0
   resourceReward:
     currencyType: 2
@@ -84580,7 +84676,7 @@ GameObject:
   - component: {fileID: 1964281675}
   - component: {fileID: 1964281676}
   m_Layer: 0
-  m_Name: M #11 - upg craft storage
+  m_Name: M #11 - Naik Taraf Tempat Simpanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84614,7 +84710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 94903708-297e-45c8-9d0f-493312e2b6b6
-  title: Upgrade craft storage to lvl 3
+  title: Naik Taraf Kepada Level 3
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -84649,7 +84745,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   upgradeType: 1
   globalUpgradeType: 0
   localUpgrade: {fileID: 943037415}
@@ -85282,7 +85390,7 @@ GameObject:
   - component: {fileID: 1976923567}
   - component: {fileID: 1976923568}
   m_Layer: 0
-  m_Name: M #05 - find cooking place
+  m_Name: M #05 - Cari Tempat Memasak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85316,7 +85424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: d782e384-aa61-48e4-aa3a-15fd58affaf0
-  title: Keep expanding
+  title: Teruskan pengembaraan
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -89341,7 +89449,7 @@ GameObject:
   - component: {fileID: 2054989353}
   - component: {fileID: 2054989354}
   m_Layer: 0
-  m_Name: M #10 - res storage
+  m_Name: M #10 - Pembinaan Tempat Simpanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89375,7 +89483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 33e052ba-10d8-4213-886a-9f5b79350132
-  title: Construct storage
+  title: Bina Tempat Simpanan
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -93537,8 +93645,8 @@ MonoBehaviour:
   navMeshSurface: {fileID: 438512383339899028}
   subWorldHandler:
     subworlds:
-    - {fileID: 1820117116}
     - {fileID: 18863360}
+    - {fileID: 1820117116}
   diggingSpawnSettings:
     spawnDelay:
       firstValue: 0

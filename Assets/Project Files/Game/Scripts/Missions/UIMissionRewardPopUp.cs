@@ -6,18 +6,31 @@ namespace Watermelon
 {
     public class UIMissionRewardPopUp : MonoBehaviour
     {
-        [SerializeField] UIFadeAnimation fadeAnimation;
-        [SerializeField] UIScaleAnimation panelBackScaleAnimation;
+        [SerializeField]
+        UIFadeAnimation fadeAnimation;
+
+        [SerializeField]
+        UIScaleAnimation panelBackScaleAnimation;
 
         [Space]
-        [SerializeField] TMP_Text headerText;
-        [SerializeField] Image previewIcon;
-        [SerializeField] TMP_Text mainText;
-        [SerializeField] TMP_Text buttonText;
+        [SerializeField]
+        TMP_Text headerText;
+
+        [SerializeField]
+        Image previewIcon;
+
+        [SerializeField]
+        TMP_Text mainText;
+
+        [SerializeField]
+        TMP_Text buttonText;
 
         [Space]
-        [SerializeField] Button fadeButton;
-        [SerializeField] Button continueButton;
+        [SerializeField]
+        Button fadeButton;
+
+        [SerializeField]
+        Button continueButton;
 
         private void Awake()
         {
@@ -76,16 +89,20 @@ namespace Watermelon
         [System.Serializable]
         public class RewardInfo
         {
-            [SerializeField] string headerText = "YOU UNLOCKED";
+            [SerializeField]
+            string headerText = "ANDA MEMBUKA";
             public string HeaderText => headerText;
 
-            [SerializeField] Sprite previewIcon;
+            [SerializeField]
+            Sprite previewIcon;
             public Sprite PreviewIcon => previewIcon;
 
-            [SerializeField] string mainText;
+            [SerializeField]
+            string mainText;
             public string MainText => mainText;
 
-            [SerializeField] string buttonText = "AWESOME";
+            [SerializeField]
+            string buttonText = "HEBAT";
             public string ButtonText => buttonText;
         }
     }
