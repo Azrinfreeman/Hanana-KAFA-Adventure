@@ -333,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 28796657}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.62, y: 0, z: 14.98}
+  m_LocalPosition: {x: 49.96, y: 0.11, z: 14.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1236,7 +1236,7 @@ GameObject:
   - component: {fileID: 107708991}
   - component: {fileID: 107708992}
   m_Layer: 0
-  m_Name: M #16 - Clear the area #5
+  m_Name: M #15 - Bersihkan Kawasan #5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 0222c2b2-3838-4707-97f8-02ad5d9cb863
-  title: Clear the area #5
+  title: Bersihkan Kawasan #5
   rewardType: 0
   resourceReward:
     currencyType: 51
@@ -1292,7 +1292,7 @@ MonoBehaviour:
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 1396844678}
   cameraPreviewAtStart: 0
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -1306,7 +1306,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1610217341}
 --- !u!1001 &113494960
 PrefabInstance:
@@ -1789,7 +1801,7 @@ GameObject:
   - component: {fileID: 132322876}
   - component: {fileID: 132322877}
   m_Layer: 0
-  m_Name: M #07 - Clear the area
+  m_Name: M #06 - Bersihkan Kawasan #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1824,7 +1836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: b7f59ea3-e358-4e42-b6e9-c87cc99461e0
-  title: Clear the area
+  title: Bersihkan Kawasan #1
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -2192,7 +2204,7 @@ GameObject:
   - component: {fileID: 149693131}
   - component: {fileID: 149693132}
   m_Layer: 0
-  m_Name: M #13 - Collect the bricks
+  m_Name: M #12 - Kumpul Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2226,7 +2238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 8ca8b44c-99da-4ba5-a4f8-31cc4c045142
-  title: Collect the bricks
+  title: Kumpul Batu Bata
   rewardType: 0
   resourceReward:
     currencyType: 51
@@ -2261,7 +2273,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 0
   amount: 0
 --- !u!1001 &149844193
@@ -3857,7 +3881,7 @@ GameObject:
   - component: {fileID: 203328009}
   - component: {fileID: 203328010}
   m_Layer: 0
-  m_Name: M #15 - Clear the area #4
+  m_Name: M #14 - Bersihkan Kawasan #4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3892,7 +3916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 88d67db6-ee5d-43c5-bec8-be278cd9b8bc
-  title: Clear the area #4
+  title: Bersihkan Kawasan #4
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -3913,7 +3937,7 @@ MonoBehaviour:
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 656635847}
   cameraPreviewAtStart: 0
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -3927,7 +3951,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1681085355}
 --- !u!1001 &211337168
 PrefabInstance:
@@ -4265,6 +4301,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 545e8f2bb4cd8e044af06c37c1f89f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &223861349 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3180739560885217780, guid: 90453817949af0e44a6e62932a90d39a,
+    type: 3}
+  m_PrefabInstance: {fileID: 223861346}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ee8f58ae906a4190cfa9428a227ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &231688015
@@ -4687,7 +4735,7 @@ GameObject:
   - component: {fileID: 273713523}
   - component: {fileID: 273713524}
   m_Layer: 0
-  m_Name: M #03 - Collect Stone
+  m_Name: M #03 - Kumpul Beberapa Batu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4721,7 +4769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: cdc494ff-b8a9-4a14-a65f-5e843383f16c
-  title: Collect Stone
+  title: Kumpul Beberapa Batu
   rewardType: 0
   resourceReward:
     currencyType: 2
@@ -4756,7 +4804,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 2
   amount: 15
 --- !u!1001 &275525357
@@ -5763,37 +5823,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1777188787}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &342154484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 342154485}
-  m_Layer: 0
-  m_Name: Custom Pointer Location
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &342154485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342154484}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.68, y: 0, z: 4.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 796108691}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &352257062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6250,7 +6279,7 @@ GameObject:
   - component: {fileID: 363607855}
   - component: {fileID: 363607856}
   m_Layer: 0
-  m_Name: M #08 - Clear the area #2
+  m_Name: M #07 - Bersihkan Kawasan #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6285,7 +6314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 4113071b-dc7e-4a48-b2bf-43e2053665e6
-  title: Clear the area #3
+  title: Bersihkan Kawasan #2
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -6306,7 +6335,7 @@ MonoBehaviour:
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 1789312182}
   cameraPreviewAtStart: 0
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -6333,7 +6362,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  groundTile: {fileID: 0}
+  groundTile: {fileID: 223861349}
 --- !u!1001 &373746464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7888,7 +7917,7 @@ Transform:
   m_GameObject: {fileID: 439984170}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0, z: -0.33}
+  m_LocalPosition: {x: 33.32, y: 0.11, z: -20.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9525,7 +9554,7 @@ GameObject:
   - component: {fileID: 554445581}
   - component: {fileID: 554445582}
   m_Layer: 0
-  m_Name: M #20 - Collect pumpkin
+  m_Name: M #19 - Kumpul Buah Labu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9560,7 +9589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 5c3ea8d3-ca71-4031-a520-884f16c45f2c
-  title: Collect pumpkin
+  title: Kumpul Buah Labu
   rewardType: 0
   resourceReward:
     currencyType: 51
@@ -9595,7 +9624,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 102
   amount: 6
 --- !u!1 &556696440
@@ -10744,7 +10785,7 @@ Transform:
   m_GameObject: {fileID: 656635846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.14, y: 0, z: -15.88}
+  m_LocalPosition: {x: 27.84, y: 0.11, z: -15.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10867,7 +10908,7 @@ GameObject:
   - component: {fileID: 674289199}
   - component: {fileID: 674289200}
   m_Layer: 0
-  m_Name: M #04 - Build A Cooking Station
+  m_Name: M #04 - Bina Tempat Memasak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10902,7 +10943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.BuildingMission
   id: 67fef30c-57e1-4a23-871f-b57eeafe157b
-  title: Build A Cooking Station
+  title: Bina Tempat Memasak
   rewardType: 0
   resourceReward:
     currencyType: 101
@@ -11530,7 +11571,7 @@ GameObject:
   - component: {fileID: 755097144}
   - component: {fileID: 755097145}
   m_Layer: 0
-  m_Name: M #12 - Build the Bricks Table
+  m_Name: M #11 - Bina Meja Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11565,7 +11606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.BuildingMission
   id: 81c7207f-83b6-466f-b9a2-51d445a7441a
-  title: Build the Bricks Table
+  title: Bina Meja Batu Bata
   rewardType: 0
   resourceReward:
     currencyType: 51
@@ -11996,102 +12037,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389001e3b23ffd04c9af8b7e293ac352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &796108690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 796108691}
-  - component: {fileID: 796108692}
-  m_Layer: 0
-  m_Name: M #05 - Create a jam
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &796108691
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796108690}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 342154485}
-  m_Father: {fileID: 1318192806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &796108692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796108690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4741a408d3b4b3842906f9ff091e494b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
-  id: ac09c6e0-9cc6-4724-b984-e532b2f7dbce
-  title: Create a jam
-  rewardType: 0
-  resourceReward:
-    currencyType: 0
-    amount: 45
-  toolsReward:
-    interactionToUnlock: 0
-    uiRewardInfo:
-      headerText: YOU UNLOCKED
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: AWESOME
-  genericReward:
-    uiRewardInfo:
-      headerText: YOU UNLOCKED
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: AWESOME
-  useCustomTargetPosition: 1
-  customTargetPosition: {fileID: 342154485}
-  cameraPreviewAtStart: 0
-  showPositionPointer: 0
-  pointerPositionOffset: {x: 0, y: 4, z: 0}
-  showGuidingLine: 0
-  guidingLineTargetOffset: {x: 0, y: 0, z: 0}
-  showGuidingArrow: 0
-  guidingArrowTargetOffset: {x: 0, y: 0, z: 0}
-  isTargetInSubworld: 0
-  subworldEntrance: {fileID: 0}
-  subworldBehavior: {fileID: 0}
-  onMissionStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onMissionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1513649997}
-        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
-        m_MethodName: GivePlayerQuestion
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  currencyType: 150
-  amount: 1
 --- !u!1001 &809651463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12544,7 +12489,7 @@ GameObject:
   - component: {fileID: 839217308}
   - component: {fileID: 839217309}
   m_Layer: 0
-  m_Name: M #09 - Clear the area #3
+  m_Name: M #08 - Bersihkan Kawasan #3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12562,7 +12507,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1703834968}
   m_Father: {fileID: 1318192806}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &839217309
@@ -12578,7 +12524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: e75adec6-f719-47f9-8c43-6ae9329a07a3
-  title: Clear the area #4
+  title: Bersihkan Kawasan #3
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -12596,10 +12542,10 @@ MonoBehaviour:
       previewIcon: {fileID: 0}
       mainText: 
       buttonText: AWESOME
-  useCustomTargetPosition: 0
-  customTargetPosition: {fileID: 0}
+  useCustomTargetPosition: 1
+  customTargetPosition: {fileID: 1703834968}
   cameraPreviewAtStart: 0
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -12613,8 +12559,20 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
-  groundTile: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  groundTile: {fileID: 1762948668}
 --- !u!1001 &841258543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15171,7 +15129,7 @@ GameObject:
   - component: {fileID: 991223350}
   - component: {fileID: 991223351}
   m_Layer: 0
-  m_Name: 'M #14 - Build a bridge '
+  m_Name: M #13 - Bina Jambatan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15206,7 +15164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.BuildingMission
   id: c6cce4d3-16df-423a-9ae3-678b9ad22a05
-  title: Build a bridge
+  title: Bina Jambatan
   rewardType: 0
   resourceReward:
     currencyType: 500
@@ -16193,7 +16151,7 @@ GameObject:
   - component: {fileID: 1046993436}
   - component: {fileID: 1046993437}
   m_Layer: 0
-  m_Name: M #21 - Clear the area #7
+  m_Name: M #20 - Bershikan Kawasan #7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16228,7 +16186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 63270a27-8fb0-4a18-991a-39b68561f9ab
-  title: Clear the area #7
+  title: Bershikan Kawasan #7
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -16249,7 +16207,7 @@ MonoBehaviour:
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 1052006270}
   cameraPreviewAtStart: 1
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -16302,7 +16260,7 @@ Transform:
   m_GameObject: {fileID: 1052006269}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.78, y: 0, z: 10.81}
+  m_LocalPosition: {x: 49.96, y: 0.11, z: 10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16515,7 +16473,7 @@ GameObject:
   - component: {fileID: 1069042388}
   - component: {fileID: 1069042389}
   m_Layer: 0
-  m_Name: M #19 - Build the 2nd bridge
+  m_Name: M #18 - Bina Jambatan Kedua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16550,7 +16508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.BuildingMission
   id: 2232de78-93fe-4581-9cf7-b7f0ebd8daed
-  title: Build the 2nd bridge
+  title: Bina Jambatan Kedua
   rewardType: 0
   resourceReward:
     currencyType: 50
@@ -16905,7 +16863,7 @@ GameObject:
   - component: {fileID: 1105700730}
   - component: {fileID: 1105700731}
   m_Layer: 0
-  m_Name: M #11 - Collect the planks
+  m_Name: M #10 - Kumpul Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16939,7 +16897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 4247fd44-446c-46e3-bb7e-1c4b182e420c
-  title: Collect the planks
+  title: Kumpul Papan
   rewardType: 0
   resourceReward:
     currencyType: 50
@@ -16974,7 +16932,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 50
   amount: 5
 --- !u!1001 &1109161705
@@ -18770,7 +18740,7 @@ GameObject:
   - component: {fileID: 1202109863}
   - component: {fileID: 1202109864}
   m_Layer: 0
-  m_Name: M #22 - Unlock the raft
+  m_Name: M #21 - Cari Rakit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18805,7 +18775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 46a2c315-be26-40dc-b40c-c53ced993591
-  title: Unlock the raft
+  title: Cari Rakit
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -18819,14 +18789,14 @@ MonoBehaviour:
       buttonText: AWESOME
   genericReward:
     uiRewardInfo:
-      headerText: YOU UNLOCKED RAFT
+      headerText: ANDA JUMPA RAKIT
       previewIcon: {fileID: 21300000, guid: 6da7d158d47ee404b9b246a402f2b7c0, type: 3}
-      mainText: YOU CAN GO HOME NOW
-      buttonText: AWESOME
+      mainText: ANDA JUMPA RAKIT
+      buttonText: HEBAT
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 28796658}
   cameraPreviewAtStart: 1
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -20198,7 +20168,7 @@ GameObject:
   - component: {fileID: 1293413352}
   - component: {fileID: 1293413353}
   m_Layer: 0
-  m_Name: M #23 - Escape from the island
+  m_Name: M #22 - Keluar Dari Pulau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20233,7 +20203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.WorldChangeMission
   id: a640d2db-ddc5-47a8-8bae-a5ce8261dacd
-  title: Escape from the island
+  title: Keluar Dari Pulau
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -21146,7 +21116,6 @@ Transform:
   - {fileID: 1570312172}
   - {fileID: 273713523}
   - {fileID: 674289199}
-  - {fileID: 796108691}
   - {fileID: 1907124187}
   - {fileID: 132322876}
   - {fileID: 363607855}
@@ -21596,7 +21565,7 @@ GameObject:
   - component: {fileID: 1340757337}
   - component: {fileID: 1340757338}
   m_Layer: 0
-  m_Name: M #10 - Build the Planks Table
+  m_Name: M #09 - Bina Meja Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21631,7 +21600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.BuildingMission
   id: 85b66ffa-a9c8-4fb8-a7f2-aad8166fc08d
-  title: Build the Planks Table
+  title: Bina Meja Papan
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -22231,7 +22200,7 @@ Transform:
   m_GameObject: {fileID: 1396844677}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28, y: 0, z: -20.8}
+  m_LocalPosition: {x: 28.04, y: 0.11, z: -20.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25235,7 +25204,7 @@ GameObject:
   - component: {fileID: 1570312172}
   - component: {fileID: 1570312173}
   m_Layer: 0
-  m_Name: M #02 - Collect Wood
+  m_Name: M #02 - Kumpul Beberapa Kayu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25269,7 +25238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 2c9cc0e0-b78b-466e-a425-edc4914eea44
-  title: Collect Wood
+  title: Kumpul Beberapa Kayu
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -25304,7 +25273,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 1
   amount: 15
 --- !u!114 &1583891766 stripped
@@ -27065,6 +27046,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1697875299}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1703834967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703834968}
+  m_Layer: 0
+  m_Name: Custom Pointer Location
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703834968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703834967}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.67, y: 0.11, z: -9.140497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 839217308}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716312769 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1788614864420773566, guid: 2ca124893fab9c74ab3d1ae06c6e2464,
@@ -27592,6 +27604,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545e8f2bb4cd8e044af06c37c1f89f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1762948668 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3180739560885217780, guid: 90453817949af0e44a6e62932a90d39a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762948665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b4ee8f58ae906a4190cfa9428a227ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1770495578 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5559803731737192703, guid: fe771dc90bb13db47a9430cae0701b9f,
@@ -28064,7 +28088,7 @@ Transform:
   m_GameObject: {fileID: 1789312181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18, y: 0, z: -8.92}
+  m_LocalPosition: {x: -0.8, y: 0.11, z: -9.140497}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28081,7 +28105,7 @@ GameObject:
   - component: {fileID: 1795869199}
   - component: {fileID: 1795869200}
   m_Layer: 0
-  m_Name: M #18 - Collect 100 bricks and 100 planks
+  m_Name: M #17 - Kumpul 100 Batu Bata Dan 100 Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28116,7 +28140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 95cb9689-591e-44cd-aac2-852687be8e54
-  title: Collect 100 bricks and 100 planks
+  title: Kumpul 100 Batu Bata Dan 100 Papan
   rewardType: 0
   resourceReward:
     currencyType: 52
@@ -28151,7 +28175,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 51
   amount: 100
 --- !u!1001 &1808375848
@@ -29803,7 +29839,7 @@ GameObject:
   - component: {fileID: 1907124187}
   - component: {fileID: 1907124188}
   m_Layer: 0
-  m_Name: M #06 - Collect Scissors
+  m_Name: M #05 - Kumpul Pemotong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29838,7 +29874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 8f29232c-cba7-47b2-b7bf-3aa501589e8d
-  title: Collect Scissors
+  title: Kumpul Pemotong
   rewardType: 0
   resourceReward:
     currencyType: 500
@@ -29873,7 +29909,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1513649997}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 500
   amount: 5
 --- !u!1001 &1907683332
@@ -30927,7 +30975,7 @@ GameObject:
   - component: {fileID: 1955618368}
   - component: {fileID: 1955618369}
   m_Layer: 0
-  m_Name: M #17 - Clear the area #6
+  m_Name: M #16 - Bersihkan Kawasan #6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30962,7 +31010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.GroundUnlockMission
   id: 43fbdd54-19f7-452c-8615-e0bb90e8c050
-  title: Clear the area #6
+  title: Bersihkan Kawasan #6
   rewardType: 0
   resourceReward:
     currencyType: 50
@@ -30983,7 +31031,7 @@ MonoBehaviour:
   useCustomTargetPosition: 1
   customTargetPosition: {fileID: 439984171}
   cameraPreviewAtStart: 1
-  showPositionPointer: 0
+  showPositionPointer: 1
   pointerPositionOffset: {x: 0, y: 4, z: 0}
   showGuidingLine: 0
   guidingLineTargetOffset: {x: 0, y: 0, z: 0}
@@ -32122,7 +32170,7 @@ GameObject:
   - component: {fileID: 2001283994}
   - component: {fileID: 2001283995}
   m_Layer: 0
-  m_Name: M #01 - Collect Coconut
+  m_Name: M #01 - Kumpul Buah Kelapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32157,7 +32205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 7e2dbb40-6bc0-47b8-9703-ae6d11c5ced9
-  title: Collect Coconuts
+  title: Kumpul Buah Kelapa
   rewardType: 0
   resourceReward:
     currencyType: 0

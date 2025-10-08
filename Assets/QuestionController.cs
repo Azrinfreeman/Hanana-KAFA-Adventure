@@ -12,9 +12,13 @@ namespace Watermelon
     {
         public System.Random rnd = new System.Random();
 
+        public System.Random rnd1 = new System.Random();
+
         public int level;
 
         public int questionNumber;
+        public int numCount;
+        public TextMeshProUGUI textNumCount;
         public TextMeshProUGUI questionText;
         public List<Transform> buttonParents;
 
@@ -32,10 +36,18 @@ namespace Watermelon
         void Start()
         {
             // Invoke("showQuestion", 0.4f);
+            numCount = 0;
+            textNumCount.text = (numCount + 1).ToString();
         }
 
         // Update is called once per frame
-        void Update() { }
+        void Update()
+        {
+            if (numCount < 5)
+            {
+                textNumCount.text = (numCount + 1).ToString();
+            }
+        }
 
         public void showQuestion()
         {
@@ -61,21 +73,33 @@ namespace Watermelon
             DisableAllButtons();
             if (!GameObject.Find("rewarded").GetComponent<AudioSource>().isPlaying)
             {
-                buttonParents[buttonNum].GetComponent<Image>().color = new Color32(
-                    54,
-                    217,
-                    42,
-                    255
-                );
                 GameObject.Find("rewarded").GetComponent<AudioSource>().Play();
                 GameObject.Find("yay").GetComponent<AudioSource>().Play();
             }
+            buttonParents[buttonNum].GetComponent<Image>().color = new Color32(54, 217, 42, 255);
+            //post question
             ScoreController.instance.AddScore(10);
             tick.gameObject.SetActive(true);
             yield return new WaitForSeconds(2f);
             tick.gameObject.SetActive(false);
-            EnableAllButtons();
-            transform.GetComponent<Animator>().Play("QuestionHide");
+            //EnableAllButtons();
+            yield return new WaitForSeconds(0.3f);
+            //repeat
+            RepeatQuestion();
+        }
+
+        public void RepeatQuestion()
+        {
+            numCount++;
+            if (numCount < 5)
+            {
+                showQuestion();
+            }
+            else
+            {
+                numCount = 0;
+                transform.GetComponent<Animator>().Play("QuestionHide");
+            }
         }
 
         void DisableAllButtons()
@@ -99,7 +123,7 @@ namespace Watermelon
         IEnumerator showQuest()
         {
             //choose which index in the list to display the qeuestion
-            questionNumber = rnd.Next(
+            questionNumber = rnd1.Next(
                 0,
                 QuestionClasses.instance.levels[level - 1].questions.Count
             );
@@ -228,7 +252,9 @@ namespace Watermelon
             {
                 GameObject.Find("Notification").GetComponent<AudioSource>().Play();
             }
-            yield return new WaitForSeconds(0.4f);
+
+            yield return new WaitForSeconds(1.2f);
+            EnableAllButtons();
         }
 
         private void buttonFunction()
@@ -242,20 +268,16 @@ namespace Watermelon
 
             if (!GameObject.Find("wrong").GetComponent<AudioSource>().isPlaying)
             {
-                buttonParents[buttonNum].GetComponent<Image>().color = new Color32(
-                    54,
-                    217,
-                    42,
-                    255
-                );
                 GameObject.Find("wrong").GetComponent<AudioSource>().Play();
                 GameObject.Find("aww").GetComponent<AudioSource>().Play();
             }
+            buttonParents[buttonNum].GetComponent<Image>().color = new Color32(54, 217, 42, 255);
             cross.gameObject.SetActive(true);
             yield return new WaitForSeconds(2f);
             cross.gameObject.SetActive(false);
-            EnableAllButtons();
-            transform.GetComponent<Animator>().Play("QuestionHide");
+
+            //repeat
+            RepeatQuestion();
         }
 
         public void HideQuestion()

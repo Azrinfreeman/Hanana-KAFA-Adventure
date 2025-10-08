@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 7540370}
   - component: {fileID: 7540371}
   m_Layer: 0
-  m_Name: M #37 - planks craft building
+  m_Name: M #35 - Pembinaan papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: f88667d7-09d7-4e1e-a952-7d38adb7d54e
-  title: Build planks craft table
+  title: Bina Craftable Papan
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -5171,7 +5171,7 @@ GameObject:
   - component: {fileID: 137583847}
   - component: {fileID: 137583848}
   m_Layer: 0
-  m_Name: M #39 - raft construction
+  m_Name: M #37 - Pembinaan Rakit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5205,7 +5205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 927523e9-b689-49f2-a518-0b465574704d
-  title: Build the raft
+  title: Bina Rakit
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -5754,7 +5754,7 @@ GameObject:
   - component: {fileID: 147546715}
   - component: {fileID: 147546716}
   m_Layer: 0
-  m_Name: M #40 - leave the island
+  m_Name: M #38 - Tinggalkan Pulau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5789,7 +5789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8222c461-6f5c-4ca5-b712-7f6bcc5b3ed2
-  title: Leave the island
+  title: Keluar Dari Pulau
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -6184,7 +6184,7 @@ GameObject:
   - component: {fileID: 153406381}
   - component: {fileID: 153406382}
   m_Layer: 0
-  m_Name: M #17 - wood gen building
+  m_Name: M #16 - Kilang Kayu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6219,7 +6219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8cc627ea-096a-45c5-87b7-f570f163a764
-  title: Build wood generator
+  title: Bina Kilang Kayu
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -10520,7 +10520,7 @@ GameObject:
   - component: {fileID: 261071232}
   - component: {fileID: 261071233}
   m_Layer: 0
-  m_Name: M #29 - bricks craft building
+  m_Name: M #27 - Pembinaan Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10554,7 +10554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 015df514-0ab2-4b71-a67c-3e683ebafe26
-  title: Build bricks craft table
+  title: Bina Meja Pembuatan Batu Bata
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -10949,102 +10949,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &269448810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 269448811}
-  - component: {fileID: 269448812}
-  m_Layer: 0
-  m_Name: M #08 - Masak Jem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &269448811
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269448810}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2032212240}
-  m_Father: {fileID: 1318192806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &269448812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269448810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4741a408d3b4b3842906f9ff091e494b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 3a7ecd45-b1da-46d9-97d1-8036e2eac343
-  title: Masak Jem
-  rewardType: 0
-  resourceReward:
-    currencyType: 0
-    amount: 15
-  toolsReward:
-    interactionToUnlock: 0
-    uiRewardInfo:
-      headerText: 
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: 
-  genericReward:
-    uiRewardInfo:
-      headerText: 
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: 
-  useCustomTargetPosition: 1
-  customTargetPosition: {fileID: 1730187500}
-  cameraPreviewAtStart: 0
-  showPositionPointer: 1
-  pointerPositionOffset: {x: 0, y: 4, z: 0}
-  showGuidingLine: 0
-  guidingLineTargetOffset: {x: 0, y: 0, z: 0}
-  showGuidingArrow: 0
-  guidingArrowTargetOffset: {x: 0, y: 0, z: 0}
-  isTargetInSubworld: 0
-  subworldEntrance: {fileID: 0}
-  subworldBehavior: {fileID: 0}
-  onMissionStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onMissionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 413851205}
-        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
-        m_MethodName: GivePlayerQuestion
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  currencyType: 150
-  amount: 1
 --- !u!1001 &269834295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12057,37 +11961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389001e3b23ffd04c9af8b7e293ac352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &285443510
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 285443511}
-  m_Layer: 0
-  m_Name: Custom Pointer Location
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &285443511
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285443510}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.73, y: -0.5, z: -41.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1862503693}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &286313887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18422,7 +18295,7 @@ GameObject:
   - component: {fileID: 422921082}
   - component: {fileID: 422921083}
   m_Layer: 0
-  m_Name: M #13 - Pembinaan Khemah
+  m_Name: M #12 - Pembinaan Khemah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20201,7 +20074,7 @@ GameObject:
   - component: {fileID: 475948696}
   - component: {fileID: 475948697}
   m_Layer: 0
-  m_Name: M #16 - Naiktaraf Kelajuan Pembinaan
+  m_Name: M #15 - Naiktaraf Kelajuan Pembinaan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20722,7 +20595,7 @@ GameObject:
   - component: {fileID: 494353321}
   - component: {fileID: 494353322}
   m_Layer: 0
-  m_Name: M #19 - cooking place upgrade
+  m_Name: M #18 - Naiktaraf Tempat Memasakl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20756,7 +20629,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: c5d36653-8b07-4c92-ac9c-53848263490a
-  title: Upgrade cooking place
+  title: Naiktaraf Tempat Memasak
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -20791,7 +20664,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   upgradeType: 1
   globalUpgradeType: 0
   localUpgrade: {fileID: 1730187501}
@@ -25078,7 +24963,7 @@ GameObject:
   - component: {fileID: 584256488}
   - component: {fileID: 584256489}
   m_Layer: 0
-  m_Name: M #22 - grass harvest
+  m_Name: M #20 - Mencantas Rumput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25113,7 +24998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: c26df37a-5003-4ffc-afec-ae5f9af33812
-  title: Harvest grass
+  title: Cantas Rumput
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -25148,7 +25033,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 3
   amount: 20
 --- !u!1001 &584340243
@@ -25731,7 +25628,7 @@ GameObject:
   - component: {fileID: 604482800}
   - component: {fileID: 604482801}
   m_Layer: 0
-  m_Name: M #32 - ramp #1 build
+  m_Name: M #30 - Pembinaan Jalan #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25765,7 +25662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 7442fc88-0f5f-415b-9f86-b2a614de2a1e
-  title: Build the ramp
+  title: Bina Jalan
   rewardType: 0
   resourceReward:
     currencyType: 2
@@ -28183,7 +28080,7 @@ GameObject:
   - component: {fileID: 658929541}
   - component: {fileID: 658929542}
   m_Layer: 0
-  m_Name: M #27 - bridge #2
+  m_Name: M #25 - Jambatan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28217,7 +28114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2825f3f7-2abf-4ece-bd36-f544a862a67b
-  title: Build the bridge
+  title: Bina Jambatan
   rewardType: 0
   resourceReward:
     currencyType: 1
@@ -30932,7 +30829,7 @@ GameObject:
   - component: {fileID: 735787372}
   - component: {fileID: 735787373}
   m_Layer: 0
-  m_Name: M #18 - coconut harvest
+  m_Name: M #17 - Pengumpulan Buah Kelapa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30967,7 +30864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: d749e259-0033-45ab-b291-930fda715909
-  title: Collect coconuts
+  title: Kumpul Buah Kelapa
   rewardType: 0
   resourceReward:
     currencyType: 101
@@ -31002,7 +30899,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 101
   amount: 3
 --- !u!4 &735918552 stripped
@@ -37124,7 +37033,7 @@ GameObject:
   - component: {fileID: 886913863}
   - component: {fileID: 886913864}
   m_Layer: 0
-  m_Name: M #30 - craft bricks
+  m_Name: M #28 - Pembuatan Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37159,7 +37068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 950c46de-9a64-46a0-8fcc-ac3188f8f4f6
-  title: Craft bricks
+  title: Hasilkan Batu Bata
   rewardType: 0
   resourceReward:
     currencyType: 51
@@ -37194,7 +37103,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 51
   amount: 10
 --- !u!1001 &887039520
@@ -45466,7 +45387,7 @@ GameObject:
   - component: {fileID: 1044371288}
   - component: {fileID: 1044371289}
   m_Layer: 0
-  m_Name: M #25 - fishing
+  m_Name: M #23 - Memancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45501,7 +45422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 9303c333-68b5-4670-ad39-d064da66e546
-  title: Catch fish
+  title: Tangkap Ikan
   rewardType: 0
   resourceReward:
     currencyType: 103
@@ -48841,7 +48762,7 @@ GameObject:
   - component: {fileID: 1094698899}
   - component: {fileID: 1094698900}
   m_Layer: 0
-  m_Name: M #35 - ramp #2 build
+  m_Name: M #33 - Pembinaan Jalan #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48875,7 +48796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: f20c95fe-fe54-4960-bf4e-b83730e418f0
-  title: Reach the top
+  title: Jalan Sampai Ke Atas
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -50493,7 +50414,7 @@ GameObject:
   - component: {fileID: 1116972647}
   - component: {fileID: 1116972648}
   m_Layer: 0
-  m_Name: M #15 - Simpanan Makanan
+  m_Name: M #14 - Simpanan Makanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51781,7 +51702,7 @@ GameObject:
   - component: {fileID: 1156361327}
   - component: {fileID: 1156361328}
   m_Layer: 0
-  m_Name: M #26 - stone generator building
+  m_Name: M #24 - Perkilangan Batu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51815,7 +51736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 12384991-da16-43b8-85cb-16993759d281
-  title: Build stone generator
+  title: Bina Kilang Batu
   rewardType: 0
   resourceReward:
     currencyType: 2
@@ -52283,7 +52204,7 @@ GameObject:
   - component: {fileID: 1169379029}
   - component: {fileID: 1169379030}
   m_Layer: 0
-  m_Name: M #28 - bricks recipe
+  m_Name: M #26 - Resepi Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52317,7 +52238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 18cf8771-d525-44b3-9e7b-305484930c67
-  title: Clean the island
+  title: Bersihkan pulau
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -52352,7 +52273,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 503146793}
 --- !u!1001 &1171497584
 PrefabInstance:
@@ -56513,7 +56446,7 @@ GameObject:
   - component: {fileID: 1279860151}
   - component: {fileID: 1279860152}
   m_Layer: 0
-  m_Name: M #24 - fishing rod recipe
+  m_Name: M #22 - Resepi Tali Pancing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56547,7 +56480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 58fb3b39-78fc-484d-a1c8-92aef3b55706
-  title: Explore the island
+  title: Teruskan Pengembaraan
   rewardType: 1
   resourceReward:
     currencyType: 0
@@ -56582,7 +56515,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1022556732}
 --- !u!4 &1280239516 stripped
 Transform:
@@ -58302,7 +58247,6 @@ Transform:
   - {fileID: 1976923567}
   - {fileID: 1423833718}
   - {fileID: 1351028547}
-  - {fileID: 269448811}
   - {fileID: 1792338066}
   - {fileID: 2054989353}
   - {fileID: 1964281675}
@@ -58314,7 +58258,6 @@ Transform:
   - {fileID: 153406381}
   - {fileID: 735787372}
   - {fileID: 494353321}
-  - {fileID: 1862503693}
   - {fileID: 1524860581}
   - {fileID: 584256488}
   - {fileID: 2041146394}
@@ -61510,7 +61453,7 @@ GameObject:
   - component: {fileID: 1400464760}
   - component: {fileID: 1400464761}
   m_Layer: 0
-  m_Name: M #36 - unlock planks
+  m_Name: M #34 - Mencari Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61544,7 +61487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8aeedd28-db76-4f74-a6fa-471c9a09c469
-  title: Explore the summit
+  title: Jalan-jalan Di Bukit
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -61579,7 +61522,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 839610205}
 --- !u!1001 &1404486617
 PrefabInstance:
@@ -65093,7 +65048,7 @@ GameObject:
   - component: {fileID: 1524860581}
   - component: {fileID: 1524860582}
   m_Layer: 0
-  m_Name: M #21 - helper #2
+  m_Name: M #19 - Penolong #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65127,7 +65082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: ec90485e-e843-46ff-9ea1-de5dea27605a
-  title: Save another survitor
+  title: Selamatkan Yang Masih Hidup
   rewardType: 1
   resourceReward:
     currencyType: 0
@@ -65162,7 +65117,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   helperBehavior: {fileID: 1862239977}
 --- !u!1001 &1524907449
 PrefabInstance:
@@ -76507,7 +76474,7 @@ GameObject:
   - component: {fileID: 1752380779}
   - component: {fileID: 1752380780}
   m_Layer: 0
-  m_Name: M #14 - Naiktaraf Kelajuan Pemain
+  m_Name: M #13 - Naiktaraf Kelajuan Pemain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76994,7 +76961,7 @@ GameObject:
   - component: {fileID: 1768670545}
   - component: {fileID: 1768670546}
   m_Layer: 0
-  m_Name: 'M #38 - Cari Tempat '
+  m_Name: 'M #36 - Cari Tempat '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77028,7 +76995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 672d53a7-c3f8-47af-af13-351e2c51d579
-  title: Explore the clif
+  title: Jalan Di Cerun
   rewardType: 2
   resourceReward:
     currencyType: 0
@@ -77063,7 +77030,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1752246547}
 --- !u!114 &1770799885 stripped
 MonoBehaviour:
@@ -77329,7 +77308,7 @@ GameObject:
   - component: {fileID: 1792338066}
   - component: {fileID: 1792338067}
   m_Layer: 0
-  m_Name: M #09 - Penolong #1
+  m_Name: M #08 - Penolong #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80736,7 +80715,7 @@ GameObject:
   - component: {fileID: 1849361657}
   - component: {fileID: 1849361658}
   m_Layer: 0
-  m_Name: M #12 - Mencari Tempat Untuk Khemah
+  m_Name: M #11 - Mencari Tempat Untuk Khemah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81187,7 +81166,7 @@ GameObject:
   - component: {fileID: 1859535999}
   - component: {fileID: 1859536000}
   m_Layer: 0
-  m_Name: M #34 - pumpkins harvest
+  m_Name: M #32 - Penghasilan Buah Labu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81222,7 +81201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 68f9c6db-1b45-4811-b211-68b6d4792db3
-  title: Harvest pumpkins
+  title: Petik Buah Labu
   rewardType: 0
   resourceReward:
     currencyType: 102
@@ -81257,7 +81236,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currencyType: 102
   amount: 4
 --- !u!1001 &1862120516
@@ -81526,102 +81517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04cc577220abb8e489c7aa0c86db2d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1862503692
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1862503693}
-  - component: {fileID: 1862503694}
-  m_Layer: 0
-  m_Name: M #20 - cook new food
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1862503693
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862503692}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 285443511}
-  m_Father: {fileID: 1318192806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1862503694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1862503692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4741a408d3b4b3842906f9ff091e494b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: ba96a839-da10-48dc-b53a-6fb8bb73beb3
-  title: Cook better food
-  rewardType: 2
-  resourceReward:
-    currencyType: 101
-    amount: 10
-  toolsReward:
-    interactionToUnlock: 0
-    uiRewardInfo:
-      headerText: YOU UNLOCKED
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: AWESOME
-  genericReward:
-    uiRewardInfo:
-      headerText: YOU CAN BUILD
-      previewIcon: {fileID: 21300000, guid: 0ab78d45b2d8ab6418eb6443411f61ce, type: 3}
-      mainText: BRIDGE
-      buttonText: OKAY
-  useCustomTargetPosition: 1
-  customTargetPosition: {fileID: 1730187500}
-  cameraPreviewAtStart: 0
-  showPositionPointer: 1
-  pointerPositionOffset: {x: 0, y: 4, z: 0}
-  showGuidingLine: 0
-  guidingLineTargetOffset: {x: 0, y: 0, z: 0}
-  showGuidingArrow: 0
-  guidingArrowTargetOffset: {x: 0, y: 0, z: 0}
-  isTargetInSubworld: 0
-  subworldEntrance: {fileID: 0}
-  subworldBehavior: {fileID: 0}
-  onMissionStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onMissionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 413851205}
-        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
-        m_MethodName: GivePlayerQuestion
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  currencyType: 151
-  amount: 1
 --- !u!1 &1872960286
 GameObject:
   m_ObjectHideFlags: 0
@@ -84676,7 +84571,7 @@ GameObject:
   - component: {fileID: 1964281675}
   - component: {fileID: 1964281676}
   m_Layer: 0
-  m_Name: M #11 - Naik Taraf Tempat Simpanan
+  m_Name: M #10 - Naik Taraf Tempat Simpanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84710,7 +84605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 94903708-297e-45c8-9d0f-493312e2b6b6
-  title: Naik Taraf Kepada Level 3
+  title: Naik Taraf Tempat Simpanan ke level 3
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -85438,10 +85333,10 @@ MonoBehaviour:
       buttonText: AWESOME
   genericReward:
     uiRewardInfo:
-      headerText: YOU CAN BUILD
+      headerText: ANDA BOLEH BINA
       previewIcon: {fileID: 21300000, guid: eaae583bf0289704b80e57b611bfc2e6, type: 3}
-      mainText: COOKING PLACE
-      buttonText: OKAY
+      mainText: TEMPAT MEMASAK
+      buttonText: HEBAT!
   useCustomTargetPosition: 0
   customTargetPosition: {fileID: 0}
   cameraPreviewAtStart: 0
@@ -86031,7 +85926,7 @@ GameObject:
   - component: {fileID: 1989989903}
   - component: {fileID: 1989989904}
   m_Layer: 0
-  m_Name: M #33 - find pumpkins
+  m_Name: M #31 - Pencarian Buah Labu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86065,7 +85960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 50c93a69-fb0c-44a5-9d6e-9ffd2033da51
-  title: Explore the highgrounds
+  title: Mengembara di tanah tinggi
   rewardType: 0
   resourceReward:
     currencyType: 50
@@ -86100,7 +85995,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   groundTile: {fileID: 1235937164}
 --- !u!1001 &1990039848
 PrefabInstance:
@@ -87793,37 +87700,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2032153220}
   m_CullTransparentMesh: 1
---- !u!1 &2032212239
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2032212240}
-  m_Layer: 0
-  m_Name: Custom Pointer Location
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2032212240
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032212239}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.73, y: -0.5, z: -41.06}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 269448811}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2032733694 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3672125828744499954, guid: 7ca1e102d3cf25b4b8d37dd29e61236f,
@@ -88165,7 +88041,7 @@ GameObject:
   - component: {fileID: 2041146394}
   - component: {fileID: 2041146395}
   m_Layer: 0
-  m_Name: M #23 - rope craft building
+  m_Name: M #21 - Pembuatan Tali
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88199,7 +88075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: baf72f22-9f52-4466-ab52-3a3b3a52b2b8
-  title: Build rope craft table
+  title: Bina Meja Untuk Pembuatan Tali
   rewardType: 0
   resourceReward:
     currencyType: 52
@@ -89449,7 +89325,7 @@ GameObject:
   - component: {fileID: 2054989353}
   - component: {fileID: 2054989354}
   m_Layer: 0
-  m_Name: M #10 - Pembinaan Tempat Simpanan
+  m_Name: M #09 - Pembinaan Tempat Simpanan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91372,7 +91248,7 @@ GameObject:
   - component: {fileID: 2093265913}
   - component: {fileID: 2093265914}
   m_Layer: 0
-  m_Name: M #31 - upg player harvest
+  m_Name: M #29 - Naiktara Pemain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91407,7 +91283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: c1caa241-e059-4489-b796-cc9162c33c80
-  title: Upgrade player harvesting
+  title: Naiktaraf "Player Harvesting"
   rewardType: 0
   resourceReward:
     currencyType: 0
@@ -91442,7 +91318,19 @@ MonoBehaviour:
       m_Calls: []
   onMissionCompleted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 413851205}
+        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
+        m_MethodName: GivePlayerQuestion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   upgradeType: 0
   globalUpgradeType: 2
   localUpgrade: {fileID: 0}

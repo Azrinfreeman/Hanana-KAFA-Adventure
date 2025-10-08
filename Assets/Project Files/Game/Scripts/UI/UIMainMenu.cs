@@ -33,6 +33,8 @@ namespace Watermelon
         {
             PlayerPrefs.DeleteAll();
             SaveController.DeleteSaveFile();
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         public override void Init()

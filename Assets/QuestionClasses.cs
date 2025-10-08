@@ -86,7 +86,7 @@ namespace Watermelon
                                 0
                             ),
                             new Question(
-                                "Rasul yang pertama ditutus ialah..",
+                                "Rasul yang pertama di utus ialah..",
                                 new List<string>
                                 {
                                     "Nabi Adam",
@@ -101,7 +101,7 @@ namespace Watermelon
                                 new List<string>
                                 {
                                     "Qidam",
-                                    "Mukhalafah lil-tauradith",
+                                    "Mukhalafatuhu lilhawadis",
                                     "Hayat",
                                     "Wahdaniyah",
                                 },
@@ -211,7 +211,7 @@ namespace Watermelon
                                 2
                             ),
                             new Question(
-                                "Rasul salah satu sifat wajib rasul yang bermaksud selalu mengatakan benar ialah..",
+                                "Salah satu sifat wajib rasul yang bermaksud selalu mengatakan benar ialah..",
                                 new List<string> { "Siddiq", "Fatanah", "Amanah", "Tabligh" },
                                 0
                             ),
