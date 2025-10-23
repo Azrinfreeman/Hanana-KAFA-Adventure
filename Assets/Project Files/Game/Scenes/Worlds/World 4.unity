@@ -1840,7 +1840,7 @@ MonoBehaviour:
   rewardType: 0
   resourceReward:
     currencyType: 0
-    amount: 45
+    amount: 121
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -2242,7 +2242,7 @@ MonoBehaviour:
   rewardType: 0
   resourceReward:
     currencyType: 51
-    amount: 33
+    amount: 66
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -4946,7 +4946,7 @@ PrefabInstance:
     - target: {fileID: 5643564737187559081, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
       propertyPath: offset.x
-      value: -1.0699997
+      value: -0.8299999
       objectReference: {fileID: 0}
     - target: {fileID: 5643564737187559081, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
@@ -4956,7 +4956,7 @@ PrefabInstance:
     - target: {fileID: 5643564737187559081, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
       propertyPath: offset.z
-      value: 0.97000027
+      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 5643564737187559081, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
@@ -4967,11 +4967,11 @@ PrefabInstance:
         type: 3}
       propertyPath: tileBehavior
       value: 
-      objectReference: {fileID: 919304314}
+      objectReference: {fileID: 1984717010}
     - target: {fileID: 8420286698620644356, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.07
+      value: 10.83
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
@@ -4981,7 +4981,7 @@ PrefabInstance:
     - target: {fileID: 8420286698620644356, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.03
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: a19a26955bb3139418365b07d5d6d495,
         type: 3}
@@ -6318,7 +6318,7 @@ MonoBehaviour:
   rewardType: 0
   resourceReward:
     currencyType: 0
-    amount: 45
+    amount: 222
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -8525,7 +8525,7 @@ PrefabInstance:
     - target: {fileID: 8420286698620644356, guid: 159fa21c139f52e4f928c3eefd86d319,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.5
+      value: 10.05
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 159fa21c139f52e4f928c3eefd86d319,
         type: 3}
@@ -8535,7 +8535,7 @@ PrefabInstance:
     - target: {fileID: 8420286698620644356, guid: 159fa21c139f52e4f928c3eefd86d319,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.07
+      value: 8.94
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 159fa21c139f52e4f928c3eefd86d319,
         type: 3}
@@ -11610,7 +11610,7 @@ MonoBehaviour:
   rewardType: 0
   resourceReward:
     currencyType: 51
-    amount: 33
+    amount: 55
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -12528,7 +12528,7 @@ MonoBehaviour:
   rewardType: 0
   resourceReward:
     currencyType: 0
-    amount: 45
+    amount: 123
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -13729,18 +13729,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 919304312}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &919304314 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5559803731737192703, guid: fe771dc90bb13db47a9430cae0701b9f,
-    type: 3}
-  m_PrefabInstance: {fileID: 919304312}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aefba80d2d74b2240a8cc06c16950d4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &919304317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13748,7 +13736,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842494735}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b192bdef6b69ea47b10c5ba976eb001, type: 3}
   m_Name: 
@@ -15167,8 +15155,8 @@ MonoBehaviour:
   title: Bina Jambatan
   rewardType: 0
   resourceReward:
-    currencyType: 500
-    amount: 34
+    currencyType: 150
+    amount: 3
   toolsReward:
     interactionToUnlock: 0
     uiRewardInfo:
@@ -17804,7 +17792,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 544599316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b192bdef6b69ea47b10c5ba976eb001, type: 3}
   m_Name: 
@@ -28105,7 +28093,7 @@ GameObject:
   - component: {fileID: 1795869199}
   - component: {fileID: 1795869200}
   m_Layer: 0
-  m_Name: M #17 - Kumpul 100 Batu Bata Dan 100 Papan
+  m_Name: M #17 - Kumpul 40 Batu Bata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28140,7 +28128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
   id: 95cb9689-591e-44cd-aac2-852687be8e54
-  title: Kumpul 100 Batu Bata Dan 100 Papan
+  title: Kumpul 25 Batu Bata
   rewardType: 0
   resourceReward:
     currencyType: 52
@@ -28189,7 +28177,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   currencyType: 51
-  amount: 100
+  amount: 25
 --- !u!1001 &1808375848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34544,12 +34532,12 @@ PrefabInstance:
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: offset.x
-      value: -1.0600004
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: offset.z
-      value: -1.6800003
+      value: 2.1800003
       objectReference: {fileID: 0}
     - target: {fileID: 4746191453007924309, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
@@ -34560,11 +34548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: tileBehavior
       value: 
-      objectReference: {fileID: 1490838211}
+      objectReference: {fileID: 378986417}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.06
+      value: 5.14
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
@@ -34574,7 +34562,7 @@ PrefabInstance:
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.68
+      value: 12.73
       objectReference: {fileID: 0}
     - target: {fileID: 8420286698620644356, guid: 739625e0a4e127746bf6c66af9b3ddcc,
         type: 3}
