@@ -38,3 +38,8 @@ MonoBehaviour:
       path: Assets/Project Files/Game/Scenes/Worlds/World 1.unity
       name: World 1
     id: 64237034-5379-4daf-b152-be8359ced037
+  - scene:
+      scene: {fileID: 102900000, guid: 361eea68332b709408fe8391773229a1, type: 3}
+      path: Assets/Project Files/Game/Scenes/Game.unity
+      name: Game
+    id: ebb7454c-9ff1-4774-87f7-2a529beb457a

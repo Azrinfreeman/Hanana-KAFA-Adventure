@@ -77,7 +77,7 @@ MonoBehaviour:
     cloudsInfluence2: 1
   nightPreset:
     partOfDayDuration: 40
-    lightColor: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+    lightColor: {r: 0.86415094, g: 0.86415094, b: 0.86415094, a: 1}
     shadowsIntensity: 0.2
     rimIntensity: 0.2
     skyGradient:

@@ -4148,8 +4148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstCamera: 0
   virtualCameras:
-  - {fileID: 1949273330}
   - {fileID: 1945819188}
+  - {fileID: 1949273330}
   blendSettings: []
   defaultBlendData:
     BlendTime: 0.5
@@ -7154,6 +7154,12 @@ Transform:
   - {fileID: 2030108964}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2027971821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 393108139874250447, guid: b5f6cc9f0ef59d34b9f4a1e24115de70,
+    type: 3}
+  m_PrefabInstance: {fileID: 3272917476749647193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2030108963
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,6 +7296,19 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 3272917476749647193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2048697919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027971821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8edc46954f1b5a14a9d4ed4d0d2d755e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Watermelon.VolumeControl
+  mixer: {fileID: 24100000, guid: e921610d177fdea4a916cf35a0cf7082, type: 2}
 --- !u!114 &2085797856 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2297333979652011487, guid: 82948df280d47ba4882db48023b6092b,
@@ -8138,6 +8157,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2131216973}
+    - targetCorrespondingSourceObject: {fileID: 393108139874250447, guid: b5f6cc9f0ef59d34b9f4a1e24115de70,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048697919}
     - targetCorrespondingSourceObject: {fileID: 4450815045613569693, guid: b5f6cc9f0ef59d34b9f4a1e24115de70,
         type: 3}
       insertIndex: -1

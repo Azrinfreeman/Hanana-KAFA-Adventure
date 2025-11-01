@@ -25901,12 +25901,12 @@ PrefabInstance:
     - target: {fileID: 5668906927800187519, guid: a645943fef2284f4d90514e5af5764e1,
         type: 3}
       propertyPath: offset.x
-      value: -2.4699998
+      value: 0.17000008
       objectReference: {fileID: 0}
     - target: {fileID: 5668906927800187519, guid: a645943fef2284f4d90514e5af5764e1,
         type: 3}
       propertyPath: offset.z
-      value: 1.8500004
+      value: -0.26000023
       objectReference: {fileID: 0}
     - target: {fileID: 5668906927800187519, guid: a645943fef2284f4d90514e5af5764e1,
         type: 3}
@@ -25946,7 +25946,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4406365980478454093, guid: a645943fef2284f4d90514e5af5764e1,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 611032953}
   m_SourcePrefab: {fileID: 100100000, guid: a645943fef2284f4d90514e5af5764e1, type: 3}
 --- !u!114 &611032950 stripped
 MonoBehaviour:
@@ -25954,7 +25958,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 611032949}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 611032952}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60c8cc059657fd543a697d8ecc1dc355, type: 3}
@@ -25966,6 +25970,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 611032949}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &611032952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4406365980478454093, guid: a645943fef2284f4d90514e5af5764e1,
+    type: 3}
+  m_PrefabInstance: {fileID: 611032949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &611032953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611032952}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b192bdef6b69ea47b10c5ba976eb001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Watermelon.ObjectEnablerByMission
+  requiredMissionId: 
 --- !u!1 &613932401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 734903000904592391, guid: be4e4e90948f3c24c9f0b4af506005c3,
@@ -50076,6 +50099,11 @@ PrefabInstance:
         type: 3}
       propertyPath: id
       value: 3455cf3d-6a92-44c7-b987-b78ac7abdee8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1658801280850867999, guid: d647b0fb526674e43b8426eed94e0137,
+        type: 3}
+      propertyPath: isOpenFromStart
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1658801280850867999, guid: d647b0fb526674e43b8426eed94e0137,
         type: 3}
@@ -87619,7 +87647,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113431924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b192bdef6b69ea47b10c5ba976eb001, type: 3}
   m_Name: 
@@ -93533,8 +93561,8 @@ MonoBehaviour:
   navMeshSurface: {fileID: 438512383339899028}
   subWorldHandler:
     subworlds:
-    - {fileID: 18863360}
     - {fileID: 1820117116}
+    - {fileID: 18863360}
   diggingSpawnSettings:
     spawnDelay:
       firstValue: 0

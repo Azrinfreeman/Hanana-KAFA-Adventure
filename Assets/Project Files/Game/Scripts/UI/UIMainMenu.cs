@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,9 +32,17 @@ namespace Watermelon
 
         public void ResetData()
         {
-            PlayerPrefs.DeleteAll();
+            StartCoroutine(Reset());
+        }
+
+        IEnumerator Reset()
+        {
+            //PlayerPrefs.DeleteAll();
             SaveController.DeleteSaveFile();
 
+            Debug.Log("Save files are removed!");
+            yield return new WaitForSeconds(0.5f);
+            yield return !Application.isPlaying;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
