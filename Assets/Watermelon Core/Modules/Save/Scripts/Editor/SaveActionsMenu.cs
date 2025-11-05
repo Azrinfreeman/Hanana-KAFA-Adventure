@@ -9,7 +9,7 @@ namespace Watermelon
         [MenuItem("Edit/Clear Save", priority = 270)]
         private static void RemoveSave()
         {
-            //PlayerPrefs.DeleteAll();
+            PlayerPrefs.DeleteAll();
             SaveController.DeleteSaveFile();
 
             Debug.Log("Save files are removed!");

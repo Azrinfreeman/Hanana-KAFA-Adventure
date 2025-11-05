@@ -37,7 +37,7 @@ namespace Watermelon
 
         IEnumerator Reset()
         {
-            //PlayerPrefs.DeleteAll();
+            PlayerPrefs.DeleteAll();
             SaveController.DeleteSaveFile();
 
             Debug.Log("Save files are removed!");

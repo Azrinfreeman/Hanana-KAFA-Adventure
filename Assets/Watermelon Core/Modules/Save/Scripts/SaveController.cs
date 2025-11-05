@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
-using UnityEngine;
 using System.Threading;
+using UnityEngine;
 
 namespace Watermelon
 {
@@ -23,7 +23,11 @@ namespace Watermelon
 
         public static event SimpleCallback OnSaveLoaded;
 
-        public static void Init(float autoSaveDelay, bool clearSave = false, float overrideTime = -1f)
+        public static void Init(
+            float autoSaveDelay,
+            bool clearSave = false,
+            float overrideTime = -1f
+        )
         {
             Serializer.Init();
 
@@ -32,7 +36,8 @@ namespace Watermelon
 
             GameObject.DontDestroyOnLoad(saveCallbackReciever);
 
-            UnityCallbackReciever unityCallbackReciever = saveCallbackReciever.AddComponent<UnityCallbackReciever>();
+            UnityCallbackReciever unityCallbackReciever =
+                saveCallbackReciever.AddComponent<UnityCallbackReciever>();
 
             if (clearSave)
             {
@@ -55,7 +60,8 @@ namespace Watermelon
             globalSave.Time = time;
         }
 
-        public static T GetSaveObject<T>(int hash) where T : ISaveObject, new()
+        public static T GetSaveObject<T>(int hash)
+            where T : ISaveObject, new()
         {
             if (!isSaveLoaded)
             {
@@ -66,12 +72,14 @@ namespace Watermelon
             return globalSave.GetSaveObject<T>(hash);
         }
 
-        public static T GetSaveObject<T>() where T : ISaveObject, new()
+        public static T GetSaveObject<T>()
+            where T : ISaveObject, new()
         {
             return GetSaveObject<T>(typeof(T).GetHashCode());
         }
 
-        public static T GetSaveObject<T>(string uniqueName) where T : ISaveObject, new()
+        public static T GetSaveObject<T>(string uniqueName)
+            where T : ISaveObject, new()
         {
             return GetSaveObject<T>(uniqueName.GetHashCode());
         }
@@ -105,15 +113,19 @@ namespace Watermelon
 
         public static void Save(bool forceSave = false, bool useThreads = true)
         {
-            if (!forceSave && !isSaveRequired) return;
-            if (globalSave == null) return;
+            if (!forceSave && !isSaveRequired)
+                return;
+            if (globalSave == null)
+                return;
 
             globalSave.Flush(true);
 
             BaseSaveWrapper saveWrapper = BaseSaveWrapper.ActiveWrapper;
-            if(useThreads && saveWrapper.UseThreads())
+            if (useThreads && saveWrapper.UseThreads())
             {
-                Thread saveThread = new Thread(() => BaseSaveWrapper.ActiveWrapper.Save(globalSave, SAVE_FILE_NAME));
+                Thread saveThread = new Thread(() =>
+                    BaseSaveWrapper.ActiveWrapper.Save(globalSave, SAVE_FILE_NAME)
+                );
                 saveThread.Start();
             }
             else
@@ -128,7 +140,7 @@ namespace Watermelon
 
         public static void SaveCustom(GlobalSave globalSave)
         {
-            if(globalSave != null)
+            if (globalSave != null)
             {
                 globalSave.Flush(false);
 
@@ -201,7 +213,8 @@ namespace Watermelon
             private void OnApplicationFocus(bool focus)
             {
 #if !UNITY_EDITOR
-                if(!focus) SaveController.Save();
+                if (!focus)
+                    SaveController.Save();
 #endif
             }
         }
