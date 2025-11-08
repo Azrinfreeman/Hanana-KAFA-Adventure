@@ -228,7 +228,7 @@ namespace Watermelon
                         questions = new List<Question>
                         {
                             new Question(
-                                "Niat solat Subuh berbunyi: Ushalli fardha subhi rak'ataini ______ ta'ala.",
+                                "Niat solat Subuh berbunyi: Ushalli fardha subhi rak'ataini ______.",
                                 new List<string> { "lillahi", "billahi", "fillahi", "wallahi" },
                                 0 // A
                             ),

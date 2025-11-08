@@ -10,9 +10,9 @@ namespace Watermelon
 {
     public class QuestionController : MonoBehaviour
     {
-        public System.Random rnd = new System.Random();
+        public static System.Random rnd = new System.Random();
 
-        public System.Random rnd1 = new System.Random();
+        public static System.Random rnd1 = new System.Random();
 
         public int level;
 
