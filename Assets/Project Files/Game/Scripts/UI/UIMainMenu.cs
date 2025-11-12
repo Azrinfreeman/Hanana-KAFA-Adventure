@@ -37,13 +37,12 @@ namespace Watermelon
 
         IEnumerator Reset()
         {
-            PlayerPrefs.DeleteAll();
-            SaveController.DeleteSaveFile();
+            ResetMissionController.instance.ResetLevel();
 
             Debug.Log("Save files are removed!");
             yield return new WaitForSeconds(0.5f);
             yield return !Application.isPlaying;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         public override void Init()

@@ -1868,7 +1868,7 @@ PrefabInstance:
     - target: {fileID: 6283049097278459654, guid: 9b42a5e21aa070f48b89f1ae56ff71f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.57
+      value: 5.5699997
       objectReference: {fileID: 0}
     - target: {fileID: 6283049097278459654, guid: 9b42a5e21aa070f48b89f1ae56ff71f9,
         type: 3}
@@ -9569,7 +9569,7 @@ Transform:
   m_GameObject: {fileID: 247124220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.73, y: -0.5, z: -41.06}
+  m_LocalPosition: {x: -13.078, y: 0.295, z: -40.684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93749,7 +93749,7 @@ PrefabInstance:
     - target: {fileID: 6735064403796600729, guid: be4e4e90948f3c24c9f0b4af506005c3,
         type: 3}
       propertyPath: constructionHitsRequired
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6735064403796600729, guid: be4e4e90948f3c24c9f0b4af506005c3,
         type: 3}
@@ -94466,8 +94466,8 @@ MonoBehaviour:
   navMeshSurface: {fileID: 438512383339899028}
   subWorldHandler:
     subworlds:
-    - {fileID: 1820117116}
     - {fileID: 18863360}
+    - {fileID: 1820117116}
   diggingSpawnSettings:
     spawnDelay:
       firstValue: 0
