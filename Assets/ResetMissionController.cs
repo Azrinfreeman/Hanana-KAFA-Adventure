@@ -24,6 +24,8 @@ namespace Watermelon
         public List<string> Player_;
         public List<string> Playerid_;
 
+        public List<string> StarsCollected_;
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start() { }
 
@@ -32,7 +34,7 @@ namespace Watermelon
 
         IEnumerator resetting()
         {
-            firstTime = PlayerPrefs.GetInt("firstTime");
+            firstTime = PlayerPrefs.GetInt("FirstTime");
             CurrentPlayer_ = PlayerPrefs.GetString("CurrentPlayer_");
             CurrentPlayerid_ = PlayerPrefs.GetString("CurrentPlayerid_");
             PlayerTotal = PlayerPrefs.GetInt("PlayerTotal");
@@ -46,6 +48,7 @@ namespace Watermelon
                     Debug.Log("has key");
                     Player_.Add(PlayerPrefs.GetString("Player_" + i));
                     Playerid_.Add(PlayerPrefs.GetString("Playerid_" + i));
+                    StarsCollected_.Add(PlayerPrefs.GetString("StarsCollected_" + i));
                 }
                 else
                 {
@@ -56,9 +59,9 @@ namespace Watermelon
             //delete all saved files
             PlayerPrefs.DeleteAll();
             SaveController.DeleteSaveFile();
-
+            yield return new WaitForSeconds(1.2f);
             //reinit again
-            PlayerPrefs.SetInt("firstTime", firstTime);
+            PlayerPrefs.SetInt("FirstTime", 1);
             PlayerPrefs.SetString("CurrentPlayer_", CurrentPlayer_);
             PlayerPrefs.SetString("CurrentPlayerid_", CurrentPlayerid_);
             PlayerPrefs.SetInt("PlayerTotal", PlayerTotal);
@@ -67,17 +70,18 @@ namespace Watermelon
             //loop and initaition
             for (int i = 0; i < 20; i++)
             {
-                if (!string.IsNullOrEmpty(PlayerPrefs.GetString("Player_" + i)))
+                if (!string.IsNullOrEmpty(Player_[i]))
                 {
                     PlayerPrefs.SetString("Player_" + i, Player_[i]);
                     PlayerPrefs.SetString("Playerid_" + i, Playerid_[i]);
+                    PlayerPrefs.SetString("StarsCollected_" + i, StarsCollected_[i]);
                 }
                 else
                 {
                     i = 21;
                 }
             }
-            yield return new WaitForSeconds(1.2f);
+            yield return new WaitForSeconds(0.2f);
         }
 
         public void ResetLevel()

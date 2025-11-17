@@ -11419,7 +11419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &268933960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100405,8 +100405,8 @@ MonoBehaviour:
   navMeshSurface: {fileID: 438512383339899028}
   subWorldHandler:
     subworlds:
-    - {fileID: 1820117116}
     - {fileID: 18863360}
+    - {fileID: 1820117116}
   diggingSpawnSettings:
     spawnDelay:
       firstValue: 0

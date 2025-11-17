@@ -37,6 +37,11 @@ namespace Watermelon
         public int level;
         public List<Levels> levels;
 
+        public void SetLevel(int levelNum)
+        {
+            level = levelNum;
+        }
+
         // Start is called before the first frame update
         void Start()
         {
