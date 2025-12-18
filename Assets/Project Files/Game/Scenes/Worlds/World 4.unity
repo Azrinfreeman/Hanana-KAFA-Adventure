@@ -473,7 +473,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42834417}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b192bdef6b69ea47b10c5ba976eb001, type: 3}
   m_Name: 
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 107708991}
   - component: {fileID: 107708992}
   m_Layer: 0
-  m_Name: M #16 - Bersihkan Kawasan #5
+  m_Name: M #15 - Bersihkan Kawasan #5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1713,7 +1713,7 @@ GameObject:
   - component: {fileID: 121033624}
   - component: {fileID: 121033625}
   m_Layer: 0
-  m_Name: M #13 - Bina Tempat Memasak #2
+  m_Name: M #12 - Bina Tempat Memasak #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2181,7 +2181,7 @@ GameObject:
   - component: {fileID: 132322876}
   - component: {fileID: 132322877}
   m_Layer: 0
-  m_Name: M #09 - Bersihkan Kawasan #1
+  m_Name: M #08 - Bersihkan Kawasan #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2371,7 +2371,7 @@ GameObject:
   - component: {fileID: 149693131}
   - component: {fileID: 149693132}
   m_Layer: 0
-  m_Name: M #19 - Buat Dan Kumpul Tali
+  m_Name: M #18 - Buat Dan Kumpul Tali
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3279,7 +3279,7 @@ GameObject:
   - component: {fileID: 203328009}
   - component: {fileID: 203328010}
   m_Layer: 0
-  m_Name: M #15 - Bersihkan Kawasan #4
+  m_Name: M #14 - Bersihkan Kawasan #4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3591,102 +3591,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 642651636}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &246881953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 246881954}
-  - component: {fileID: 246881955}
-  m_Layer: 0
-  m_Name: M #08 - Buka Harta Karun
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &246881954
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246881953}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1240117917}
-  m_Father: {fileID: 1318192806}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &246881955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246881953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4741a408d3b4b3842906f9ff091e494b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Watermelon.CollectMission
-  id: b0ee54df-5d3c-4eea-bc8b-149141fd71ee
-  title: Buka Harta Karun
-  rewardType: 0
-  resourceReward:
-    currencyType: 0
-    amount: 100
-  toolsReward:
-    interactionToUnlock: 0
-    uiRewardInfo:
-      headerText: ANDA MEMBUKA
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: HEBAT
-  genericReward:
-    uiRewardInfo:
-      headerText: ANDA MEMBUKA
-      previewIcon: {fileID: 0}
-      mainText: 
-      buttonText: HEBAT
-  useCustomTargetPosition: 1
-  customTargetPosition: {fileID: 1240117917}
-  cameraPreviewAtStart: 1
-  showPositionPointer: 0
-  pointerPositionOffset: {x: 0, y: 4, z: 0}
-  showGuidingLine: 0
-  guidingLineTargetOffset: {x: 0, y: 0, z: 0}
-  showGuidingArrow: 1
-  guidingArrowTargetOffset: {x: 0, y: 0, z: 0}
-  isTargetInSubworld: 0
-  subworldEntrance: {fileID: 0}
-  subworldBehavior: {fileID: 0}
-  onMissionStarted:
-    m_PersistentCalls:
-      m_Calls: []
-  onMissionCompleted:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1513649997}
-        m_TargetAssemblyTypeName: Watermelon.QuestionAssign, Assembly-CSharp
-        m_MethodName: GivePlayerQuestion
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  currencyType: 0
-  amount: 50
 --- !u!1001 &247331119
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4970,7 +4874,7 @@ GameObject:
   - component: {fileID: 363607855}
   - component: {fileID: 363607856}
   m_Layer: 0
-  m_Name: M #12 - Bersihkan Kawasan #2
+  m_Name: M #11 - Bersihkan Kawasan #2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6792,7 +6696,7 @@ GameObject:
   - component: {fileID: 554445581}
   - component: {fileID: 554445582}
   m_Layer: 0
-  m_Name: M #20 - Kumpul Buah Labu
+  m_Name: M #19 - Kumpul Buah Labu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8074,6 +7978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scissors Drop Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912945604614884336, guid: e9c35b81da71c244c8ea1afaea9164da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8626691272054341649, guid: e9c35b81da71c244c8ea1afaea9164da,
         type: 3}
@@ -9487,7 +9396,7 @@ GameObject:
   - component: {fileID: 755097144}
   - component: {fileID: 755097145}
   m_Layer: 0
-  m_Name: M #18 - Bina Meja Pembuat Tali
+  m_Name: M #17 - Bina Meja Pembuat Tali
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10452,7 +10361,7 @@ GameObject:
   - component: {fileID: 839217308}
   - component: {fileID: 839217309}
   m_Layer: 0
-  m_Name: M #14 - Bersihkan Kawasan #3
+  m_Name: M #13 - Bersihkan Kawasan #3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11853,6 +11762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soup Drop Resource
       objectReference: {fileID: 0}
+    - target: {fileID: 3912945604614884336, guid: e850786c596471a44be5d2b11b3af3ce,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8626691272054341649, guid: e850786c596471a44be5d2b11b3af3ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13085,7 +12999,7 @@ GameObject:
   - component: {fileID: 1069042388}
   - component: {fileID: 1069042389}
   m_Layer: 0
-  m_Name: M #22 - Bina Jambatan Kedua
+  m_Name: M #21 - Bina Jambatan Kedua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13574,7 +13488,7 @@ GameObject:
   - component: {fileID: 1105700730}
   - component: {fileID: 1105700731}
   m_Layer: 0
-  m_Name: M #17 - Kumpul Papan
+  m_Name: M #16 - Kumpul Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15520,7 +15434,7 @@ GameObject:
   - component: {fileID: 1202109863}
   - component: {fileID: 1202109864}
   m_Layer: 0
-  m_Name: M #23 - Cari Rakit
+  m_Name: M #22 - Cari Rakit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15835,37 +15749,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Watermelon.ObjectEnablerByMission
   requiredMissionId: 43fbdd54-19f7-452c-8615-e0bb90e8c050
---- !u!1 &1240117916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1240117917}
-  m_Layer: 0
-  m_Name: Custom Pointer Location
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1240117917
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240117916}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.09, y: 0, z: 5.58}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 246881954}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1241372713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16542,7 +16425,7 @@ GameObject:
   - component: {fileID: 1293413352}
   - component: {fileID: 1293413353}
   m_Layer: 0
-  m_Name: M #24 - Keluar Dari Pulau
+  m_Name: M #23 - Keluar Dari Pulau
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17411,7 +17294,6 @@ Transform:
   - {fileID: 134651090}
   - {fileID: 2072005830}
   - {fileID: 1374244604}
-  - {fileID: 246881954}
   - {fileID: 132322876}
   - {fileID: 1340757337}
   - {fileID: 1773628660}
@@ -17719,7 +17601,7 @@ GameObject:
   - component: {fileID: 1340757337}
   - component: {fileID: 1340757338}
   m_Layer: 0
-  m_Name: M #10 - Bina Meja Papan
+  m_Name: M #09 - Bina Meja Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23253,7 +23135,7 @@ GameObject:
   - component: {fileID: 1773628660}
   - component: {fileID: 1773628661}
   m_Layer: 0
-  m_Name: M #11 - Memancing Ikan #1
+  m_Name: M #10 - Memancing Ikan #1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25233,7 +25115,7 @@ GameObject:
   - component: {fileID: 1955618368}
   - component: {fileID: 1955618369}
   m_Layer: 0
-  m_Name: M #21 - Bersihkan Kawasan #6
+  m_Name: M #20 - Bersihkan Kawasan #6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27780,6 +27662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Coin Drop Resource
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912945604614884336, guid: 1740eacb0ecdbd14684f7e6858e95b7d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8626691272054341649, guid: 1740eacb0ecdbd14684f7e6858e95b7d,
         type: 3}

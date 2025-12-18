@@ -26,7 +26,6 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - CURVE_ON
-  - TOON_ON
   - USE_GLOBAL_MULTIPLIERS
   - _DETAIL_MULX2
   - _PARALLAXMAP
@@ -177,7 +176,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _ToonOn: 1
+    - _ToonOn: 0
     - _Transparent: 0
     - _UseGlobalMultipliers: 1
     - _WindOn: 0
@@ -200,3 +199,4 @@ Material:
     - _WindTexSize: {r: 1, g: 1, b: 0, a: 0}
     - _WindVelocity: {r: 0.1, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

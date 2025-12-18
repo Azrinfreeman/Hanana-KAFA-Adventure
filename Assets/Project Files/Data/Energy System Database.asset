@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxEnergyPoints: 500
   energyCostForHarvesting: 2
-  energyCostForBuilding: 7
+  energyCostForBuilding: 3
   lowEnergySpeedMult: 0.7
   lowEnergyHarvestSpeedMult: 0.7
   foodItems:

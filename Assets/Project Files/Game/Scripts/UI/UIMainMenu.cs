@@ -38,11 +38,16 @@ namespace Watermelon
         IEnumerator Reset()
         {
             ResetMissionController.instance.ResetLevel();
+            PlayerPrefs.DeleteAll();
+            SaveController.DeleteSaveFile();
 
+            // DDOLCleaner.Instance.DestroyRegisteredDDOLObjects();
             Debug.Log("Save files are removed!");
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(0);
+            yield return new WaitForSeconds(1f);
+            //DDOLCleaner.Instance.Reinit();
             yield return !Application.isPlaying;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         public override void Init()

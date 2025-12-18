@@ -27,9 +27,6 @@ Material:
   m_ValidKeywords:
   - CURVE_ON
   - FOLIAGE_ON
-  - RIM_ON
-  - SPECULAR_ON
-  - TOON_ON
   - USE_GLOBAL_MULTIPLIERS
   - WIND_ON
   - _DETAIL_MULX2
@@ -170,18 +167,18 @@ Material:
     - _ReceiveShadows: 1
     - _RimMax: 1
     - _RimMin: 0.47
-    - _RimOn: 1
+    - _RimOn: 0
     - _Shadows: 2
     - _Shiness: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _Specular: 0.91
     - _SpecularHighlights: 1
-    - _SpecularOn: 1
+    - _SpecularOn: 0
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _ToonOn: 1
+    - _ToonOn: 0
     - _Transparent: 0
     - _UseGlobalMultipliers: 1
     - _WindOn: 1
@@ -204,3 +201,4 @@ Material:
     - _WindTexSize: {r: 10, g: 10, b: 0, a: 0}
     - _WindVelocity: {r: 0.2, g: -0.2, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
