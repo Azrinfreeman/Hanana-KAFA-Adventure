@@ -5857,8 +5857,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstCamera: 0
   virtualCameras:
-  - {fileID: 1945819188}
   - {fileID: 1949273330}
+  - {fileID: 1945819188}
   blendSettings: []
   defaultBlendData:
     BlendTime: 0.5
@@ -10791,10 +10791,7 @@ PrefabInstance:
     - target: {fileID: 4437231055463807664, guid: b5f6cc9f0ef59d34b9f4a1e24115de70,
         type: 3}
       propertyPath: m_text
-      value: 'GENIUS KAFA
-
-
-'
+      value: "GENIUS \nKAFA UPKK\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4579257054182183951, guid: b5f6cc9f0ef59d34b9f4a1e24115de70,
         type: 3}
